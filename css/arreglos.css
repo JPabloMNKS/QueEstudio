@@ -41,6 +41,31 @@ input[type="password"],input[type="email"]{
     
     outline: none;
     
+}
+
+
+nav.uni{
+    min-width: 250px;
+    height: 100%;
+    
+
+}
+
+li.unil{
+    min-width: 230px;
     
 }
 
+a.uninav{
+    min-width: 250px;
+    height: 40px;
+}
+
+nav.sidebar{
+    height: inherit;
+    align-content: flex-start
+}
+
+iframe.tam{
+    min-height: 450px;
+}

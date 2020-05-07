@@ -25,7 +25,6 @@
     <!-- Arreglos CSS -->
     <link href="../css/arreglos.css" rel="stylesheet">
 
-
 </head>
 
 <body id="page-top">
@@ -35,7 +34,7 @@
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark" id="mainNav">
 
         <div class="container">
-            <a class="navbar-brand js-scroll-trigger" href="#page-top">Donde Estudio</a>
+            <a class="navbar-brand js-scroll-trigger" href="../index.php">Donde Estudio</a>
             <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
                 Menu
                 <i class="fas fa-bars"></i>
@@ -43,66 +42,391 @@
             <div class="collapse navbar-collapse" id="navbarResponsive">
                 <ul class="navbar-nav text-uppercase ml-auto">
                     <li class="nav-item">
-                        <a class="nav-link js-scroll-trigger" href="#services">Services</a>
+                        <a class="nav-link js-scroll-trigger" href="../index.php#services">Servicios</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link js-scroll-trigger" href="#portfolio">Que Estudio</a>
+                        <a class="nav-link js-scroll-trigger" href="../index.php#portfolio">Que Estudio</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link js-scroll-trigger" href="#about">About</a>
+                        <a class="nav-link js-scroll-trigger" href="../index.php#about">About</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link js-scroll-trigger" href="#team">Equipo</a>
+                        <a class="nav-link js-scroll-trigger" href="../index.php#team">Equipo</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link js-scroll-trigger" href="#contact">Contactanos</a>
+                        <a class="nav-link js-scroll-trigger" href="../index.php#contact">Contactanos</a>
                     </li>
                 </ul>
             </div>
         </div>
     </nav>
 
-    <!-- Header -->
-    <!--    <header class="masthead">
-        <div class="container">
-            <div class="intro-text">
-                <div class="intro-lead-in">Bienvenido a nuestra pagina</div>
-                <div class="intro-heading text-uppercase">Listo para el futuro</div>
-                <a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger" href="#services">Empezemos!</a>
-            </div>
-        </div>
-    </header>-->
-
-
 
 
 
     <!-- Prueba -->
-    <section class="bg-light page-section" id="team">
-        <div class="container">
-            <label for="exampleInputEmail1">Email address</label>
-            <div class="form-check">
-                <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
-                <label class="form-check-label" for="exampleRadios1">
-                    Default radio
-                </label>
-            </div>
-            <div class="form-check">
-                <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
-                <label class="form-check-label" for="exampleRadios2">
-                    Second default radio
-                </label>
-            </div>
-            <div class="form-check">
-                <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios3" value="option3" disabled>
-                <label class="form-check-label" for="exampleRadios3">
-                    Disabled radio
-                </label>
-            </div>
+    <div>
 
+        <div class="row bg-light">
+
+            <nav class="navbar navbar-dark bg-dark uni sidebar">
+                <div class="col-3">
+
+                    <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+
+                        <a class="nav-link active uninav" id="pills-emi-general-tab" data-toggle="pill" href="#pills-emi-general" role="tab" aria-controls="pills-emi-general" aria-selected="true">UCB</a>
+
+                        <!--  <a href="#homeSubmenu" class="dropdown-toggle dropdown-toggle-split nav-link" data-toggle="collapse" aria-expanded="false" style="">Más carreras
+                    </a>
+
+                    <ul id="homeSubmenu" role="tablist">
+                        <li class="unil">-->
+
+                        <a class="nav-link uninav" id="pills-ucb-administracion-tab" data-toggle="pill" href="#pills-ucb-administracion" role="tab" aria-controls="pills-ucb-administracion" aria-selected="false">Administracion de empresas</a>
+
+                        <!--                 </li>
+                        <li>-->
+                        <a class="nav-link uninav" id="pills-ucb-arquitectura-tab" data-toggle="pill" href="#pills-ucb-arquitectura" role="tab" aria-controls="pills-ucb-arquitectura" aria-selected="false">Arquitectura</a>
+                        <!--         </li>
+                        <li >-->
+                        <a class="nav-link uninav" id="pills-ucb-comunicacion-tab" data-toggle="pill" href="#pills-ucb-comunicacion" role="tab" aria-controls="pills-ucb-comunicacion" aria-selected="false">Comunicacion Social</a>
+                        <!--           </li>
+                        <li >-->
+                        <a class="nav-link uninav" id="pills-ucb-comercial-tab" data-toggle="pill" href="#pills-ucb-comercial" role="tab" aria-controls="pills-ucb-politicas" aria-selected="false">Ingenieria Comercial</a>
+                        <!--      </li>
+                        <li>-->
+                        <a class="nav-link uninav" id="pills-ucb-contaduria-tab" data-toggle="pill" href="#pills-ucb-contaduria" role="tab" aria-controls="pills-ucb-contaduria" aria-selected="false">Contaduria Publica</a>
+                        <!--    </li>
+                        <li>-->
+                        <a class="nav-link uninav" id="pills-ucb-derecho-tab" data-toggle="pill" href="#pills-ucb-derecho" role="tab" aria-controls="pills-ucb-derecho" aria-selected="false">Derecho</a>
+                        <!--   </li>
+                        <li>-->
+                        <a class="nav-link uninav" id="pills-ucb-economia-tab" data-toggle="pill" href="#pills-ucb-economia" role="tab" aria-controls="pills-ucb-economia" aria-selected="false">Economia</a>
+                        <!--         </li>
+                        <li>-->
+                        <a class="nav-link uninav" id="pills-ucb-ambiental-tab" data-toggle="pill" href="#pills-ucb-ambiental" role="tab" aria-controls="pills-ucb-ambiental" aria-selected="false">Ingeniería Ambiental</a>
+                        <!--    </li>
+                        <li>-->
+                        <a class="nav-link uninav" id="pills-ucb-civil-tab" data-toggle="pill" href="#pills-ucb-civil" role="tab" aria-controls="pills-ucb-civil" aria-selected="false">Ingeniería Civil</a>
+                        <!--       </li>
+                    </ul>-->
+
+                        <a class="nav-link" href="emi.html" role="tab">EMI</a>
+                        <a class="nav-link" href="umsa.html" role="tab">UMSA</a>
+                        <a class="nav-link" href="unicen.html" role="tab">UNICEN</a>
+                        <a class="nav-link" href="upb.html" role="tab">UPB</a>
+                        <a class="nav-link" href="univalle.html" role="tab">UNIVALLE</a>
+                    </div>
+                </div>
+            </nav>
+
+
+            <div class="col-9">
+                <div class="tab-content" id="v-pills-tabContent">
+
+                    <div class="tab-pane fade show active" id="pills-emi-general" role="tabpanel" aria-labelledby="pills-emi-general-tab">
+                        <h2>Informacion general UCB</h2>
+
+                        <p style="text-align: justify;"><strong>VISIÓN</strong><br />Ser la Universidad líder en la formación de profesionales en Ingeniería y de especialización, caracterizada por el estudio, aplicación e innovación tecnológica, con responsabilidad social y reconocida a nivel nacional e internacional.<br /><strong>MISIÓN</strong><br />Formar y especializar profesionales de excelencia, con principios, valores ético - morales y cívicos, caracterizados por su responsabilidad social, espíritu emprendedor, liderazgo y disciplina; promoviendo la internacionalización, Interacción Social y desarrollo de la Ciencia, Tecnología e Innovación, para contribuir al desarrollo del Estado.<br /><strong>POLÍTICA DE CALIDAD</strong><br />Formar y especializar profesionales íntegros, con institucionalidad, responsabilidad social y cultura de innovación basada en la investigación y aplicación tecnológica, mediante el cumplimiento de los requisitos y estándares del Sistema de Gestión de Calidad.</p>
+                        <p><strong>PRINCIPIOS</strong></p>
+                        <p style="padding-left: 30px; text-align: justify;">a. Busca la excelencia como desafío institucional en todos los actos académicos de formación, de investigación, de interacción social, de extensión y de gestión.<br />b. Dirige su esfuerzo principal a la formación y especialización tecnológica.<br />c. Forma y especializa profesionales en función a la visión del Estado.<br />d. Inculca valores ético - morales y principios.<br />e. Promueve y genera conocimientos de vanguardia tecnológica.<br />f. Respeta la libertad de pensamiento y culto.<br />g. Promueve el uso sostenible y sustentable de los recursos naturales y el Medio Ambiente.<br />h. Responde rápidamente y en forma planificada al cambiante entorno social, económico, tecnológico y científico.<br />i. Mantiene y profundiza las bases históricas y cívicas de nuestra identidad nacional para incrementar el orgullo de ser bolivianos y así proyectarnos hacia el futuro.<br />j. Respeta, preserva e integra los conocimientos tradicionales y saberes ancestrales a sus diseños curriculares.<br />k. Promueve la equidad de género, manteniendo la igualdad de oportunidades.</p>
+                        <p><strong>VALORES</strong></p>
+                        <p style="padding-left: 30px; text-align: justify;">a. Libertad, respetando las diferentes corrientes de pensamiento y expresión.<br />b. Equidad, otorgando oportunidades sin discriminación de género, ideología, raza y religión.<br />c. Honestidad, exaltando la verdad y la ética profesional.<br />d. Patriotismo, inculcando el civismo, identidad, cultura y amor a la Patria.<br />e. Disciplina, promoviendo el acatamiento consciente de normas y reglamentos institucionales; y el respeto a las leyes.<br />f. Liderazgo, formando líderes que promuevan el emprendimiento de forma individual y colectiva a nivel nacional e internacional.<br />g. Calidad y Excelencia, inspirando al Talento Humano para la generación de procesos de servicio y de producción, hasta alcanzar la excelencia.<br />h. Justicia, actuando en función a las leyes y normas vigentes.<br />i. Ética, respetando valores y principios de la entidad y el Estado.<br />j. Compromiso, promoviendo y logrando un sentimiento de entrega, identidad y unidad.<br />k. Igualdad, promoviendo la participación de la comunidad universitaria, sin discriminación ni restricciones, fomentando la cultura de la no violencia.<br />l. Complementariedad, generando sinergia entre la formación académica y los saberes ancestrales.</p>
+
+
+                    </div>
+
+                    <div class="tab-pane fade " id="pills-ucb-administracion" role="tabpanel" aria-labelledby="pills-ucb-administracion-tab"><b>
+                            <h2>Información de Administracion de Empresas</h2>
+                        </b>
+
+                        <!--                        <p style="text-align: center;"><img class="qx-image " style="float: right;" src="../img/emi/carreras/emi-Ingenieria-Sistemas.png" alt="" /></p>
+-->
+                        <p><strong>OBJETIVO DE LA CARRERA</strong></p>
+                        <p style="text-align: justify;"> Formar profesionales capacitados para: Investigar, dirigir y asesorar organizaciones diversas, logrando jerarquizar el liderazgo competitivo, incrementar su valor económico y de responsabilidad social, aplicando principios de calidad, productividad, competitividad y ética en cada unade sus funciones administrativas de: planificación, organización, dirección, control y gestión de las operaciones.</p>
+
+                        <p><strong>PERFIL PROFESIONAL</strong></p>
+                        <p style="text-align: justify;"> Su característica principal es el liderazgo en el cambio y la continua toma de decisiones, basada en un enfoque heurístico y percepción rigurosa de la realidad frente a los objetivos estratégicos pretendidos.
+                            Sus decisiones se fundamentan en el juicio crítico-reflexivo, el análisis y diagnóstico valorando los impactos y consecuencias de su actuación en el mercado y la sociedad en su conjunto.
+                            Se desempeña con cristianos y ética profesional proyectados en el ejercicio de su liderazgo, responsabilidad legal y toma de decisiones. </p>
+
+                        <p><strong>CAMPO LABORAL</strong></p>
+                        <p style="text-align: justify;"> El Administrador de Empresas será un líder de cambios para el desarrollo empresarial, con profunda sensibilidad humana (emprendedora) y de la realidad nacional e internacional, ejerciendo con ética y de responsabilidad social todas las acciones que promuevan y generen el desarrollo integral en el entorno donde se desenvuelve, como: <br><br>
+
+                            Investigador en gestión del conocimiento basado en competencias empresariales (independiente o formando grupos interdisciplinarios).
+                            Ejecutivo principal o de áreas funcionales, para la innovación y renovación emprendedora.
+                            Analista o consultor en desarrollo organizacional y comportamientos productivos.
+                            Docente e investigador académico en las áreas de gerencia, emprendedurismo y gestión productiva.
+                            .</p>
+
+                        <img class="qx-img " style="display: block; margin-left: auto; margin-right: auto; width: 751px; height: 595px;" src="../img/universidades/ucb/mallas/MallaCurricularAdmistracionEmpresas.png" alt="">
+
+                        <div style="margin-top: 20px; margin-bottom: 30px;">
+                            <h3><b><a href="../assets/ucb/mallas/ADM.pdf" target="_blank" rel="noopener noreferrer" style="color: black;">Descargar la malla curricular haciendo click Aqui!</a></b></h3>
+                        </div>
+
+                    </div>
+
+                    <div class="tab-pane fade" id="pills-ucb-arquitectura" role="tabpanel" aria-labelledby="pills-ucb-arquitectura-tab">
+                        <h2>Información de Arquitectura</h2>
+
+                        <!--                        <p><img class="qx-image " style="float: right;" src="../img/emi/carreras/emi-Ingenieria-Ambiental.png" alt="" /></p>-->
+                        <p style="text-align: justify;"><strong>OBJETIVO DE LA CARRERA</strong></p>
+
+                        <p style="text-align: justify;"> Mantener el reconocimiento obtenido en toda Bolivia, como la carrera más sólida en su formación tanto intelectual como cultural y espiritual. A partir de este reconocimiento, la carrera busca estar a nivel de las más prestigiosas facultades y carreras de arquitectura del continente y del mundo. Formar verdaderos líderes y profesionales capaces de interpretar las necesidades de la sociedad a través de la práctica proyectual, utilizando una base cultural, un profundo sentido ético, un respeto por la tradición y la cultura en una permanente búsqueda de nuevas soluciones arquitectónicas; incorporando una clara metodología de trabajo e información actualizada.</p>
+
+                        <p><strong>CAMPO LABORAL</strong></p>
+                        <p style="text-align: justify;"> Analizar: Información, procedimientos y sistemas para llegar a una toma de decisiones.
+                            Investigar: En los campos relacionados a la arquitectura y la ciudad para optimizar soluciones . <br>
+                            Proyectar: Objetos y espacios que sirvan al ser humano y a la sociedad en su conjunto . <br>
+                            Planificar: Para organizar y optimizar la ejecución de un proyecto.
+                            Coordinar: Los distintos factores que intervienen en la concreción de un proyecto. <br>
+                            Evaluar: Proyectos y obras para comprobar el grado de cumplimiento de los objetivos.
+                        </p>
+
+
+                        <img class="qx-img " style="display: block; margin-left: auto; margin-right: auto; width: 751px; height: 595px;" src="../img/universidades/ucb/mallas/MallaCurricularArquitectura.png" alt="">
+
+                        <div style="margin-top: 20px; margin-bottom: 30px;">
+                            <h3><b><a href="../assets/ucb/mallas/ARQ.pdf" target="_blank" rel="noopener noreferrer" style="color: black;">Descargar la malla curricular haciendo click Aqui!</a></b></h3>
+                        </div>
+                    </div>
+
+                    <div class="tab-pane fade" id="pills-ucb-comunicacion" role="tabpanel" aria-labelledby="pills-ucb-comunicacion-tab">
+                        <h2>Información de Comunicacion Social</h2>
+
+                        <!--<p style="text-align: center;"><img class="qx-image " style="float: right;" src="../img/emi/carreras/emi-Ingenieria-Petrolera.png" alt="" /></p>
+                        -->
+
+                        <p><strong>OBJETIVO DE LA CARRERA</strong></p>
+                        <p style="text-align: justify;"> Formar profesionales capacitados para: Investigar, dirigir y asesorar organizaciones diversas, logrando jerarquizar el liderazgo competitivo, incrementar su valor económico y de responsabilidad social, aplicando principios de calidad, productividad, competitividad y ética en cada unade sus funciones administrativas de: planificación, organización, dirección, control y gestión de las operaciones.</p>
+
+                        <p><strong>PERFIL PROFESIONAL</strong></p>
+                        <p style="text-align: justify;"> Su característica principal es el liderazgo en el cambio y la continua toma de decisiones, basada en un enfoque heurístico y percepción rigurosa de la realidad frente a los objetivos estratégicos pretendidos.
+                            Sus decisiones se fundamentan en el juicio crítico-reflexivo, el análisis y diagnóstico valorando los impactos y consecuencias de su actuación en el mercado y la sociedad en su conjunto.
+                            Se desempeña con cristianos y ética profesional proyectados en el ejercicio de su liderazgo, responsabilidad legal y toma de decisiones. </p>
+
+                        <p><strong>CAMPO LABORAL</strong></p>
+                        <ul style="text-align: justify;">
+                            <li>Medios de comunicación televisivos, radiofónicos, impresos y
+                                digitales.</li>
+                            <li>Empresas e instituciones en sus áreas de imagen corporativa,
+                                relaciones públicas y eventos.</li>
+                            <li>Agencias publicitarias y creativas.</li>
+                            <li>Productoras audiovisuales, multimediales y de cine.</li>
+                            <li>Organizaciones de desarrollo social y educación.</li>
+                            <li>Redes sociales y servicios web.</li>
+                        </ul>
+
+
+                        <img class="qx-img " style="display: block; margin-left: auto; margin-right: auto; width: 751px; height: 595px;" src="../img/universidades/ucb/mallas/MallaCurricularComunicacionSocial.png" alt="">
+
+                        <div style="margin-top: 20px; margin-bottom: 30px;">
+                            <h3><b><a href="../assets/ucb/mallas/COM.pdf" target="_blank" rel="noopener noreferrer" style="color: black;">Descargar la malla curricular haciendo click Aqui!</a></b></h3>
+                        </div>
+                    </div>
+
+                    <div class="tab-pane fade" id="pills-ucb-comercial" role="tabpanel" aria-labelledby="pills-ucb-comercial-tab">
+                        <h2>Información de Ingenieria Comercial</h2>
+
+                        <!--<p style="text-align: center;"><img class="qx-image " style="float: right;" src="../img/emi/carreras/emi-Ingenieria-Sistemas-Electronicos.png" alt="" /></p>-->
+
+                        <p><strong>OBJETIVO DE LA CARRERA</strong></p>
+                        <p style="text-align: justify;"> Formar profesionales con la capacidad de equilibrar la base conceptual económica con herramientas de administración de empresas, combinando así rigor analítico y cuantitativo, pragmatismo y creatividad en la resolución de problemas. <br>
+                            Desarrollar en estudiantes competencias de análisis estratégico de problemas y procesos y la capacidad de aplicar técnicas gerenciales para generar alternativas efectivas de solución.</p>
+
+                        <p><strong>PERFIL PROFESIONAL</strong></p>
+                        <p style="text-align: justify;"> Líderes en el desarrollo de nuevos modelos de negocio
+                            Expertos en gestión empresarial
+                            Conocedores del manejo de las herramientas financieras y de marketing
+                            Capaces de desenvolverse con eficiencia comercial en un mundo globalizado
+                            Analista comercial de la realidad empresarial y de su entorno
+                            Generadores de nuevos negocios productivos empresariales
+                            Estrategas en actividades de marketing
+                            Investigadores de mercados de productos y servicios
+                            Cuenta con sólidos principios y valores cristianos y ética profesional proyectados en el ejercicio de liderazgo, responsabilidad legal y toma de sediciones. <br>
+                            Está capacitado para: <br>
+
+                            Un profesional capacitado para contribuir al análisis y resolución de problemas, así como mejorar los resultados económicos, administrativos y de comercialización en los ámbitos empresariales y sector público. <br>
+                            Un gerente con capacidad técnica y cono-cimientos conceptuales para desempeñarse efectivamente en organizaciones de los sectores público o privado, realizando funciones como analista, ejecutivo, consultor e investigador en diversas áreas. <br>
+                            Un analista de procesos comerciales integrando conceptos económicos y de gestión
+                        </p>
+
+                        <p><strong>CAMPO LABORAL</strong></p>
+                        <ul style="text-align: justify;"> 
+                            <li>Empresas privadas y públicas.</li>
+                            <li>Empresas nacionales e internacionales.</li>
+                            <li>Actividad de consultoría e investigación de mercados.</li>
+                            <li>Dirección y Gestión de Marketing.</li>
+                            <li>Desarrollo y creación de empresas.</li>
+                        </ul>
+
+
+                        <img class="qx-img " style="display: block; margin-left: auto; margin-right: auto; width: 751px; height: 595px;" src="../img/universidades/ucb/mallas/MallaCurricularIngenieriaComercial.png" alt="">
+                        <div style="margin-top: 20px; margin-bottom: 30px;">
+                            <h3><b><a href="../assets/ucb/mallas/ICO.pdf" target="_blank" rel="noopener noreferrer" style="color: black;">Descargar la malla curricular haciendo click Aqui!</a></b></h3>
+                        </div>
+
+                    </div>
+
+                    <div class="tab-pane fade" id="pills-ucb-contaduria" role="tabpanel" aria-labelledby="pills-ucb-contaduria-tab">
+                        <h2>Información de Contaduria Publica</h2>
+
+                        <!--                        <p style="text-align: center;"><img class="qx-image " style="float: right;" src="../img/emi/carreras/emi-Ingenieria-Civil.png" alt="" /></p>-->
+
+                        <p style="text-align: justify;"><strong>OBJETIVO DE LA CARRERA</strong></p>
+                        <p style="text-align: justify;"> a Carrera Contador Auditor tiene como propósito formar profesionales especialistas en el área contable, financiera, tributaria, de control y auditoria interna y externa, siendo capaz de gestionar y realizar procesos relacionados, emitiendo una opinión técnica respecto de la razonabilidad de los estados financieros, aplicando la normativa vigente, utilizando herramientas tecnológicas como apoyo a su gestión y elaborando informes respecto de la información contable y financiera recabada en base a las normas nacionales e internacionales (NIF/NIAS), contribuyendo así a la mejora contínua de las áreas de la organización.</p>
+
+                        <p><strong>CAMPO LABORAL</strong></p>
+                        <ul style="text-align: justify;">
+                            <li>Empresas privadas y públicas.</li>
+                            <li>Empresas nacionales e internacionales.</li>
+                            <li>Empresas comerciales (mayoristas y minoristas).</li>
+                            <li>Empresas industriales, mineras, cooperativas y bancarias.</li>
+                            <li>Sistema financiero, seguros, pensiones y valores.</li>
+                            <li>Empresas comerciales, petroleras, agroindustriales y constructoras.</li>
+                            <li>Fundaciones, ONG´s y consultorías.</li>
+                            <li>Desarrollo y realización de auditorías internas y externas.</li>
+                            <li>Firmas de auditoría nacionales e internacionales.</li>
+                        </ul>
+
+                        <img class="qx-img " style="display: block; margin-left: auto; margin-right: auto; width: 751px; height: 595px;" src="../img/universidades/ucb/mallas/MallaCurricularContaduriaPublica.png" alt="" >
+                        <div style="margin-top: 20px; margin-bottom: 30px;">
+                            <h3><b><a href="../assets/ucb/mallas/CPA.pdf" target="_blank" rel="noopener noreferrer" style="color: black;">Descargar la malla curricular haciendo click Aqui!</a></b></h3>
+                        </div>
+                    </div>
+
+                    <div class="tab-pane fade" id="pills-ucb-derecho" role="tabpanel" aria-labelledby="pills-ucb-derecho-tab">
+
+                        <h2>Información de Derecho</h2>
+
+
+                        <p><strong>OBJETIVO DE LA CARRERA</strong></p>
+                        <p style="text-align: justify;"> Lograr excelencia profesional con capacidad creativa y liderazgo, mediante el conocimiento preciso del Derecho y su aplicación; a partir de principios de ética, justicia, integridad moral y honestidad para el desempeño eficiente de sus funciones. <br><br>
+
+                            Cultivar en el futuro abogado sensibilidad social, honestidad, probidad y espíritu de justicia en beneficio de la humanidad. <br>
+
+                            Especializar al abogado en una rama determinada del derecho y. de esta manera optimizar su rendimiento en el mercado laboral. <br>
+
+                            Enfatizar y promover su capacidad de investigación, para un eficaz servicio social a su comunidad. <br>
+
+                            Capacitar al futuro abogado, para el análisis crítico y reflexivo de la realidad social e interpretación de las leyes. <br>
+
+                            Desarrollar capacidad de análisis jurídicos, mediante la construcción de un caso jurídico a partir de un conflicto social, con el objetivo de resolverlo en el marco del respeto de los derechos humanos, las leyes internas y la preservación de los valores de justicia y paz social.</p>
+                        <p><strong>PERFIL PROFESIONAL</strong></p>
+                        <ul style="text-align: justify;">
+                            <li>Capacidad de análisis y síntesis</li>
+                            <li>Razonamiento lógico</li>
+                            <li>Creatividad</li>
+                            <li>Capacidad de trabajo individual y en equipo</li>
+                            <li>Habito a la lectura</li>
+                            <li>Capacidad de comunicación</li>
+                            <li>Capacidad de liderazgo</li>
+                        </ul>
+
+                        <p><strong>CAMPO LABORAL</strong></p>
+                        <ul style="text-align: justify;">
+                            <li>Órganos Judicial, Legislativo, Ejecutivo y Electoral.</li>
+                            <li>Ministerio Público.</li>
+                            <li>Servicio Nacional de Impuestos y Aduanas.</li>
+                            <li>Protección del medio ambiente y recursos naturales.</li>
+                            <li>Organismos Internacionales.</li>
+                            <li>Empresa Privada.</li>
+                            <li>Profesión libre.</li>
+                            <li>Conciliación.</li>
+                            <li>Negociación.</li>
+                            <li>Medios Alternativos de Resolución de Conflictos.</li>
+                        </ul>
+
+                        <img class="qx-img " style="display: block; margin-left: auto; margin-right: auto; width: 751px; height: 595px;" src="../img/universidades/ucb/mallas/MallaCurricularDerecho.png" alt="" >
+                        <div style="margin-top: 20px; margin-bottom: 30px;">
+                            <h3><b><a href="../assets/ucb/mallas/DER.pdf" target="_blank" rel="noopener noreferrer" style="color: black;">Descargar la malla curricular haciendo click Aqui!</a></b></h3>
+                        </div>
+
+                    </div>
+
+                    <div class="tab-pane fade" id="pills-ucb-economia" role="tabpanel" aria-labelledby="pills-ucb-economia-tab">
+
+                        <h2>Información de Economia</h2>
+
+                        <!--                        <p style="text-align: center;"><img class="qx-image " style="float: right;" src="../img/emi/carreras/emi-Ingenieria-Geografica.png" alt="" /></p>-->
+
+                        <p><strong>OBJETIVO DE LA CARRERA</strong></p>
+                        <p style="text-align: justify;"> El profesional economista desarrolla: - Capacidad para aplicar las más modernas técnicas de la ciencia económica a realidades concretas en el ámbito de la economía como un todo, y de los sectores público y privado. - Competencia en el manejo adecuado del instrumental económico que le permite detectar el problema económico, investigar su naturaleza, las causas y efectos, analizar alternativas de solución y diseñar las políticas e instrumentos más adecuados para resolverlo. - Capacidad de integrar conocimientos de las diferentes disciplinas del saber para desempeñar funciones en otros campos que no sean estrictamente los de la Economía. - Capacidad de analizar los problemas que resultan de la pobreza y del subdesarrollo y considerar los efectos económicos de las políticas sociales en el campo de la salud, educación y el medio ambiente. - Posee una formación humana y cristiana que lo hace portador de una alta conciencia social.
+                        </p>
+
+                        <img class="qx-img " style="display: block; margin-left: auto; margin-right: auto; width: 751px; height: 595px;" src="../img/universidades/ucb/mallas/MallaCurricularEconomia.png" alt="" >
+                        <div style="margin-top: 20px; margin-bottom: 30px;">
+                            <h3><b><a href="../assets/ucb/mallas/ECO.pdf" target="_blank" rel="noopener noreferrer" style="color: black;">Descargar la malla curricular haciendo click Aqui!</a></b></h3>
+                        </div>
+
+                    </div>
+
+                    <div class="tab-pane fade" id="pills-ucb-ambiental" role="tabpanel" aria-labelledby="pills-ucb-ambiental-tab">
+
+                        <h2>Información de Ingenieria Ambiental</h2>
+
+                        <!--                        <p style="text-align: center;"><img class="qx-image " style="float: right;" src="../img/emi/carreras/emi-Ingenieria-Financiera.png" alt="" /></p>-->
+
+                        <p><strong>OBJETIVO DE LA CARRERA</strong></p>
+                        <p style="text-align: justify;"> Nuestro objetivo es formar profesionales de excelencia en la evaluación de impactos ambientales, elaboración de instrumentos de regulación de alcance particular, así como en el diseño e implementación de proyectos de GESTIÓN AMBIENTAL pública y privada, el desarrollo y aplicación de TECNOLOGÍA AMBIENTALES para prevenir, mitigar, restaurar y remediar PROBLEMAS AMBIENTALES a nivel local o regional.</p>
+
+                        <p><strong>CAMPO LABORAL</strong></p>
+                        <ul style="text-align: justify;">
+                            <li>Consultoras Ambientales</li>
+                            <li>Industria (empresas diversas, minería, etc.)</li>
+                            <li>Sector público (empresas públicas, institutos, gobierno)</li>
+                            <li>Fundaciones y ONG’s, en el área de medio ambiente y desarrollo</li>
+                            <li>Centros de Investigación</li>
+                        </ul>
+
+
+                        <img class="qx-img " style="display: block; margin-left: auto; margin-right: auto; width: 751px; height: 595px;" src="../img/universidades/ucb/mallas/MallaCurricularIngenieriaAmbiental.png" alt="" >
+                        <div style="margin-top: 20px; margin-bottom: 30px;">
+                            <h3><b><a href="../assets/ucb/mallas/IMA.pdf" target="_blank" rel="noopener noreferrer" style="color: black;">Descargar la malla curricular haciendo click Aqui!</a></b></h3>
+                        </div>
+
+                    </div>
+
+                    <div class="tab-pane fade" id="pills-ucb-civil" role="tabpanel" aria-labelledby="pills-ucb-civil-tab">
+                        <h2>Información de Ingenieria Civil</h2>
+
+
+                        <!--<p style="text-align: center;"><img class="qx-image " style="float: right;" src="../img/emi/carreras/emi-Ingenieria-Industrial.png" alt="" /></p>-->
+
+                        <p><strong>OBJETIVO DE LA CARRERA</strong></p>
+                        <p style="text-align: justify;"> Formar profesionales capacitados para: Investigar, dirigir y asesorar organizaciones diversas, logrando jerarquizar el liderazgo competitivo, incrementar su valor económico y de responsabilidad social, aplicando principios de calidad, productividad, competitividad y ética en cada unade sus funciones administrativas de: planificación, organización, dirección, control y gestión de las operaciones.</p>
+
+                        <p><strong>PERFIL PROFESIONAL</strong></p>
+                        <p style="text-align: justify;"> COMPETENCIAS DEL INGENIERO CIVIL DE LA UCB
+                            COMPETENCIA GENÉRICA <br>
+                            Demuestra un desempeño académico, profesional y personal superior, sustentado en el análisis crítico, la investigación, la innovación, la actuación democrática y emprendedora, el uso de tecnologías de última generación y la comunicación, según los ideales, principios y actitudes católicos, en el contexto local, nacional e internacional. <br><br>
+                            COMPETENCIAS ESPECÍFICAS
+                            Las competencias específicas del Ingeniero Civil de la UCB son: <br><br>
+
+                            Estructuras: Concibe, analiza, calcula, diseña, construye y supervisa sistemas estructurales, de obras edilicias, utilizando la ciencia y tecnología en forma eficiente, eficaz y pertinente, de manera segura, económica, confiable y durable. <br>
+                            Vías Y Transporte: Concibe, analiza, calcula, diseña, construye y supervisa soluciones viales y de transporte, utilizando la ciencia y tecnología en forma eficiente, eficaz y pertinente, de modo que permitan la integración física de las regiones y las comunidades. <br>
+                            Hidráulica / Hidrología: Concibe, analiza, calcula, diseña, construye y supervisa obras hidráulicas estimando la disponibilidad de los recursos hídricos, utilizando la ciencia y tecnología en forma eficiente, eficaz y pertinente, de manera que sean satisfactorias en términos técnicos, socioeconómicos, estéticos y medioambientales. <br>
+                            Geotecnia: Analiza y determina el uso y tratamiento del suelo, su respuesta a intervenciones externas y su relación con el entorno, utilizando la ciencia y tecnología en forma eficiente, eficaz y pertinente, para contribuir a tener obras estables y seguras.
+                        </p>
+
+                        <p><strong>CAMPO LABORAL</strong></p>
+                        <ul style="text-align: justify;">
+                            <li>Empresas privadas y públicas.</li>
+                            <li>Empresas nacionales e internacionales.</li>
+                            <li>Actividad en consultoria e investigación.</li>
+                            <li>Dirección y administración de proyectos.</li>
+                        </ul>
+
+                        <img class="qx-img " style="display: block; margin-left: auto; margin-right: auto; width: 751px; height: 595px;" src="../img/universidades/ucb/mallas/MallaCurricularIngenieriaCivil.png" alt="">
+                        <div style="margin-top: 20px; margin-bottom: 30px;">
+                            <h3><b><a href="../assets/ucb/mallas/CIV.pdf" target="_blank" rel="noopener noreferrer" style="color: black;">Descargar la malla curricular haciendo click Aqui!</a></b></h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-    </section>
-
+    </div>
 
 
 
@@ -161,7 +485,6 @@
 
     <!-- Custom scripts for this template -->
     <script src="../js/agency.min.js"></script>
-
 </body>
 
 </html>

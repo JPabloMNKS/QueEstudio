@@ -25,7 +25,6 @@
     <!-- Arreglos CSS -->
     <link href="../css/arreglos.css" rel="stylesheet">
 
-
 </head>
 
 <body id="page-top">
@@ -35,7 +34,7 @@
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark" id="mainNav">
 
         <div class="container">
-            <a class="navbar-brand js-scroll-trigger" href="#page-top">Donde Estudio</a>
+            <a class="navbar-brand js-scroll-trigger" href="../index.php">Donde Estudio</a>
             <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
                 Menu
                 <i class="fas fa-bars"></i>
@@ -43,66 +42,475 @@
             <div class="collapse navbar-collapse" id="navbarResponsive">
                 <ul class="navbar-nav text-uppercase ml-auto">
                     <li class="nav-item">
-                        <a class="nav-link js-scroll-trigger" href="#services">Services</a>
+                        <a class="nav-link js-scroll-trigger" href="../index.php#services">Servicios</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link js-scroll-trigger" href="#portfolio">Que Estudio</a>
+                        <a class="nav-link js-scroll-trigger" href="../index.php#portfolio">Que Estudio</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link js-scroll-trigger" href="#about">About</a>
+                        <a class="nav-link js-scroll-trigger" href="../index.php#about">About</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link js-scroll-trigger" href="#team">Equipo</a>
+                        <a class="nav-link js-scroll-trigger" href="../index.php#team">Equipo</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link js-scroll-trigger" href="#contact">Contactanos</a>
+                        <a class="nav-link js-scroll-trigger" href="../index.php#contact">Contactanos</a>
                     </li>
                 </ul>
             </div>
         </div>
     </nav>
 
-    <!-- Header -->
-    <!--    <header class="masthead">
-        <div class="container">
-            <div class="intro-text">
-                <div class="intro-lead-in">Bienvenido a nuestra pagina</div>
-                <div class="intro-heading text-uppercase">Listo para el futuro</div>
-                <a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger" href="#services">Empezemos!</a>
-            </div>
-        </div>
-    </header>-->
-
-
 
 
 
     <!-- Prueba -->
-    <section class="bg-light page-section" id="team">
-        <div class="container">
-            <label for="exampleInputEmail1">Email address</label>
-            <div class="form-check">
-                <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
-                <label class="form-check-label" for="exampleRadios1">
-                    Default radio
-                </label>
-            </div>
-            <div class="form-check">
-                <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
-                <label class="form-check-label" for="exampleRadios2">
-                    Second default radio
-                </label>
-            </div>
-            <div class="form-check">
-                <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios3" value="option3" disabled>
-                <label class="form-check-label" for="exampleRadios3">
-                    Disabled radio
-                </label>
+    <div>
+
+        <div class="row bg-light">
+
+            <nav class="navbar navbar-dark bg-dark uni sidebar">
+                <div class="col-3">
+
+                    <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+
+                        <a class="nav-link active uninav" id="pills-umsa-general-tab" data-toggle="pill" href="#pills-umsa-general" role="tab" aria-controls="pills-umsa-general" aria-selected="true">UMSA</a>
+
+                        <!--  <a href="#homeSubmenu" class="dropdown-toggle dropdown-toggle-split nav-link" data-toggle="collapse" aria-expanded="false" style="">Más carreras
+                    </a>
+
+                    <ul id="homeSubmenu" role="tablist">
+                        <li class="unil">-->
+
+                        <a class="nav-link uninav" id="pills-umsa-arquitectura-tab" data-toggle="pill" href="#pills-umsa-arquitectura" role="tab" aria-controls="pills-umsa-arquitectura" aria-selected="false">Arquitectura</a>
+
+                        <!--                 </li>
+                        <li>-->
+                        <a class="nav-link uninav" id="pills-umsa-bioquimica-tab" data-toggle="pill" href="#pills-umsa-bioquimica" role="tab" aria-controls="pills-umsa-bioquimica" aria-selected="false">Bioquimica</a>
+                        <!--         </li>
+                        <li >-->
+                        <a class="nav-link uninav" id="pills-umsa-geografica-tab" data-toggle="pill" href="#pills-umsa-geografica" role="tab" aria-controls="pills-umsa-geografica" aria-selected="false">Ingeniería Geografica</a>
+                        <!--           </li>
+                        <li >-->
+                        <a class="nav-link uninav" id="pills-umsa-informatica-tab" data-toggle="pill" href="#pills-umsa-informatica" role="tab" aria-controls="pills-umsa-informatica" aria-selected="false">Informatica</a>
+                        <!--      </li>
+                        <li>-->
+                        <a class="nav-link uninav" id="pills-umsa-derecho-tab" data-toggle="pill" href="#pills-umsa-derecho" role="tab" aria-controls="pills-umsa-derecho" aria-selected="false">Derecho</a>
+                        <!--    </li>
+                        <li>-->
+                        <a class="nav-link uninav" id="pills-umsa-psicologia-tab" data-toggle="pill" href="#pills-umsa-psicologia" role="tab" aria-controls="pills-umsa-psicologia" aria-selected="false">Psicologia</a>
+                        <!--   </li>
+                        <li>-->
+                        <a class="nav-link uninav" id="pills-umsa-enfermeria-tab" data-toggle="pill" href="#pills-umsa-enfermeria" role="tab" aria-controls="pills-umsa-enfermeria" aria-selected="false">Enfermeria</a>
+                        <!--         </li>
+                        <li>-->
+                        <a class="nav-link uninav" id="pills-umsa-electromecanica-tab" data-toggle="pill" href="#pills-umsa-electromecanica" role="tab" aria-controls="pills-umsa-electromecanica" aria-selected="false">Electromecanica</a>
+                        <!--    </li>
+                        <li>-->
+                        <a class="nav-link uninav" id="pills-umsa-petrolera-tab" data-toggle="pill" href="#pills-umsa-petrolera" role="tab" aria-controls="pills-umsa-petrolera" aria-selected="false">Ingeniería Petrolera</a>
+                        <!--       </li>
+                    </ul>-->
+
+                        <a class="nav-link" href="emi.html" role="tab">EMI</a>
+                        <a class="nav-link" href="ucb.html" role="tab">UCB</a>
+                        <a class="nav-link" href="unicen.html" role="tab">UNICEN</a>
+                        <a class="nav-link" href="upb.html" role="tab">UPB</a>
+                        <a class="nav-link" href="univalle.html" role="tab">UNIVALLE</a>
+                    </div>
+                </div>
+            </nav>
+
+
+            <div class="col-9">
+                <div class="tab-content" id="v-pills-tabContent">
+
+                    <div class="tab-pane fade show active" id="pills-umsa-general" role="tabpanel" aria-labelledby="pills-umsa-general-tab">
+                        <h2>Informacion general UMSA</h2>
+
+                        <p style="text-align: justify;"><strong>VISIÓN</strong><br />Universidad de investigación, emprendedora e innovadora con reconocimiento internacional, valorada por su contribución a la generación de conocimiento y formación de profesionales líderes en la revolución del pensamiento con responsabilidad y compromiso al servicio de la sociedad.</p>
+                        <p style="text-align: justify;"><strong>MISIÓN</strong><br />Formar profesionales altamente calificados, con compromiso y responsabilidad social, con reflexión y pensamiento crítico, emprendedor y constructor de una sociedad justa e inclusiva. Promoviendo la innovación integrada al Estado, la sociedad y la comunidad científica y académica internacional, impulsando la progresiva transformación en busca de mejora de calidad de vida de la población.</p>
+                        <p style="text-align: justify;"><strong>OBJETIVO GENERAL</strong><br />Lograr la interdisciplinariedad, concurrencia e interacción de la investigación que desarrolla la Universidad Mayor de San Andrés para aumentar la eficiencia y efectividad de la docencia, la interacción social y la difusión, como base de la gestión del conocimiento.</p>
+                        <p style="text-align: justify;"><strong>HISTORIA DE LA UMSA</strong><br />La Universidad Mayor de San Andrés, fue creada en virtud del Decreto Supremo de fecha 25 de octubre de 1830, firmado por el Presidente de la República de Bolivia Mariscal Andrés de Santa Cruz.</p>
+                        <p style="text-align: justify;">El 30 de noviembre de ese mismo año mediante acta pública, se inauguraron oficialmente las actividades de la entonces denominada, Universidad Menor de San Andrés de La Paz de Ayacucho. <br> La Universidad de La Paz, adquiere su nombre definitivo el 28 de mayo de 1927. Según Decreto emitido en esa fecha esta Casa de Estudios Superiores se denomina, “Universidad Mayor de San Andrés” en homenaje a su fundador.  </p>
+                        <p style="text-align: justify;">Fuente: La Cátedra Edición Nº 100- Periódico Institucional de la Universidad Mayor de San Andrés</p>
+                        
+                        
+                    </div>
+
+                    <div class="tab-pane fade " id="pills-umsa-arquitectura" role="tabpanel" aria-labelledby="pills-umsa-arquitectura-tab">
+
+                        <b>
+                            <h2>Información de Arquitectura</h2>
+                        </b>
+
+                        <!--<p style="text-align: center;"><img class="qx-image " style="float: right;" src="../img/emi/carreras/emi-Ingenieria-Sistemas.png" alt="" /></p>-->
+
+                        <p><strong>Perfil de Profesional Arquitecto</strong></p>
+                        <p style="text-align: justify;">El profesional arquitecto, al alcanzar el grado académico de licenciatura deberá demostrar su capacidad y competencia, expresada en los siguientes conocimientos, habilidades, actitudes y responsabilidades:</p>
+
+                        <p><strong>Perfil de Profesional Arquitecto</strong></p>
+                        <p style="text-align: justify;">Visión holística (flexible e integral) con un enfoque multitemporal, intercultural, transdisciplinar y complejo de los conocimientos.
+                            Ser capaz de una lectura alternativa de la realidad y su comprensión crítica y transformadora como respuesta a las demandas sociales.
+                            Capacidades de investigación, gestión de proyectos, desarrollo múltiple del razonamiento, creatividad y responsabilidad ética.
+                            Capacidad de innovar y diversificar en nuevas áreas del diseño, de la producción del espacio habitable y de las artes.
+                            Ser capaz de mantenerse en un desarrollo permanente, continuo y autónomo de construcción de conocimientos y de utilización de aprendizajes colaborativos y cooperativos.
+                            Capacidad de incorporar y utilizar medios e instrumentos contemporáneos de la tecnología de información y comunicación.
+                            Capacidad de intervenir en programas, proyectos o acciones de interacción social en el ámbito de la arquitectura y el urbanismo. </p>
+
+                        <p><strong>COMPETENCIAS ESPECÍFICAS DISEÑO</strong></p>
+                        <ol style="text-align: justify;">
+                            <li>Capaz de concebir, diseñar, comprender y ejecutar el acto de construir en respuesta a problemas en el ámbito de la arquitectura y del urbanismo.</li>
+                            <li>Demostrar capacidad de buscar, seleccionar, analizar, procesar y organizar información pertinente al diseño en diferentes niveles de complejidad y profundidad.</li>
+                            <li>Capacidades específicas del diseño: creatividad, innovación, argumentación, crítica y autocrítica del diseño</li>
+                            <li>Capacidad de diseño en múltiples dimensiones.</li>
+                            <li>Capacidad de manejar incertidumbre, indeterminación, grados de profundidad y complejidad de los procesos de diseño. Resolviendo contradicciones e integrando conocimientos.</li>
+                            <li>Conocer, poder fundamentar y demostrar que las soluciones adoptadas respondenadecuadamente a los conocimientos específicos del proceso de diseño. (Espacio y tiempo, forma, color y estética, función, dimensión-posición y volumen, Estructura-tecnología y materiales, Instalaciones, equipamiento y mobiliario, otros.</li>
+                        </ol>
+
+                        <p><strong>CONTEXTO Y USUARIO</strong></p>
+                        <ol style="text-align: justify;">
+                            <li>Capacidad de identificar las demandas sociales en el campo de la arquitectura y el urbanismo.</li>
+                            <li>Capacidad de identificar al usuario y ubicarlo en el contexto socio-económico.</li>
+                            <li>Capacidad de establecer condicionantes del contexto natural, urbano, cultural y tecnológico.</li>
+                            <li>Poder identificar problemas, objetivos e imaginarios del usuario, clasificarlos y jerarquizarlos.</li>
+                            <li>Capacidad de determinar las condicionantes (requerimientos), para el diseño que se definen a partir del usuario, problema y contexto como resultado de la demanda social.</li>
+                            <li>Capacidad de establecer una postura frente a los problemas de la realidad social, del usuario y de su contexto.</li>
+                            <li>Poder evaluar si los resultados del diseño se adecuan a los objetivos del usuario.</li>
+                        </ol>
+
+                        <p><strong>COMUNICACIÓN</strong></p>
+                        <ol style="text-align: justify;">
+                            <li>Conocer, comprender y manejar adecuadamente los medios de expresión y representación del diseño (físico, verbal, matemático, gráfico).</li>
+                            <li>Comprender los procesos de comunicación, poder seleccionar los medios adecuados, organizar y diseñar el material de comunicación.</li>
+                            <li>Capacidad de evaluar los procesos de comunicación referidos al diseño.</li>
+                        </ol>
+
+
+                        <!--<p>http://faadu.umsa.bo/index.php/car-arq</p>-->
+
+                        <!--<img class="qx-img " style="display: block; margin-left: auto; margin-right: auto;" src="../img/emi/mallas/MallaCurriculardeSistemas.jpg" alt="">
+
+                        <div style="margin-top: 20px; margin-bottom: 30px;">
+                            <h3><b><a href="../assets/emi/mallas/MallaCurriculardeSistemas_compressed.pdf" target="_blank" rel="noopener noreferrer" style="color: black;">Descargar la malla curricular haciendo click Aqui!</a></b></h3>
+                        </div>-->
+                    </div>
+
+                    <div class="tab-pane fade" id="pills-umsa-bioquimica" role="tabpanel" aria-labelledby="pills-umsa-bioquimica-tab">
+                        <h2>Información de Bioquimica</h2>
+                        <hr>
+                        <h5>PERFIL PROFESIONAL DEL BIOQUÍMICO</h5>
+
+                        <!--<p><img class="qx-image " style="float: right;" src="../img/emi/carreras/emi-Ingenieria-Ambiental.png" alt="" /></p>
+                        -->
+                        <p style="text-align: justify;"><strong>Perfil Profesional:</strong></p>
+                        <p style="text-align: justify;"> El Bioquímico es el profesional formado en ciencias biológicas y químicas capaz de aplicar su conocimiento, habilidades y destrezas en el laboratorio de diagnóstico clínico, de análisis e investigación científica.
+                        </p>
+                        <p style="text-align: justify;">Por lo tanto el Bioquímico es el profesional cuya competencia le permite estudiar los constituyentes químicos y biológicos de los seres vivos, conocer sus funciones, transformaciones e interacciones en los procesos vitales tanto fisiológicos como patológicos de manera tal que es capaz de realizar el diagnóstico de las entidades clínicas en el laboratorio. También esta capacitado para realizar desarrollo tecnológico y científico en las áreas de salud, medio ambiente y reactivos para el laboratorio clínico. </p>
+
+                        <p style="text-align: justify;">
+                            Coadyuva en la solución de problemas de salud en los ámbitos de bioquímica clínica, microbiología y citología aplicada y en áreas emergentes como bioquímica forense, toxicología clínica y ambiental, bioquímica del medio ambiente, alimentos, producción, biotecnología y otras…</p>
+
+                        <p style="text-align: justify;"><strong>Actividades Específicas que se desarrollan en la Profesión:</strong></p>
+
+                        <ul style="text-align: justify;">
+                            <il>
+                                Realiza el diagnóstico clínico orientado a la salud humana.
+                            </il>
+                            <il>
+                                Se desempeña como innovador en el laboratorio de diagnóstico clínico.
+                            </il>
+                            <li>
+                                Desarrolla investigación científica en el área de bioquímica animal y vegetal, en genética y biología molecular.
+                            </li>
+                            <li>
+                                Resuelve problemas medio ambientales (biolixiviación, bioremediación, etc.)
+                            </li>
+                            <li>
+                                Desarrolla investigación aplicada en el área biotecnológica.
+                            </li>
+                            <li>
+                                Participa directamente en el proceso productivo, realizando un buen control de calidad.
+                            </li>
+                            <li>
+                                Ejerce la docencia en áreas de su competencia.
+                            </li>
+                            <li>
+                                Se desempeña en laboratorios de desarrollo e investigación de industrias relacionadas con productos químicos o naturales: fermentación, proteínas, hormonas, etc.
+                            </li>
+                            <li>
+                                Desarrolla e interpreta análisis de productos biológicos, como hormonas, enzimas, vacunas, etc.
+                            </li>
+                            <li>
+                                Lleva a cabo el estudio nutricional de productos naturales y elaborados.
+                            </li>
+                            <li>
+                                Realiza e interpreta análisis bromatológicos en organismos fiscalizadores de alimentos.
+                            </li>
+                            <li>
+                                Se desarrolla como perito en el área de la bioquímica forense: Biología, Toxicología y Genética Forense.
+                            </li>
+                            <li>
+                                Realiza el diagnóstico de las enfermedades genéticas y de los cromosomas (cáncer, enfermedades citogenéticas y otros).
+                            </li>
+                            <li>
+                                Maneja materiales peligrosos (radiactivos, infecciosos, tóxicos, etc.)
+                            </li>
+                        </ul>
+
+                        <!-- http://fcfb.umsa.bo/web/bioquimica1-->
+                        <!--<img class="qx-img " style="display: block; margin-left: auto; margin-right: auto;" src="../img/emi/mallas/MallaCurricularAmbiental.jpg" alt="">
+
+                        <div style="margin-top: 20px; margin-bottom: 30px;">
+                            <h3><b><a href="../assets/emi/mallas/MallaCurricularAmbiental_compressed.pdf" target="_blank" rel="noopener noreferrer" style="color: black;">Descargar la malla curricular haciendo click Aqui!</a></b></h3>
+                        </div>-->
+                    </div>
+
+                    <div class="tab-pane fade" id="pills-umsa-geografica" role="tabpanel" aria-labelledby="pills-umsa-geografica-tab">
+                        <h2>Información de Ingenieria Geografica</h2>
+
+                        <!--                        <p style="text-align: center;"><img class="qx-image " style="float: right;" src="../img/emi/carreras/emi-Ingenieria-Petrolera.png" alt="" /></p>-->
+
+                        <p style="text-align: justify;"><strong>Perfil Profesional:</strong></p>
+                        <p style="text-align: justify;"> En este contexto el perfil del ingeniero geógrafo mostrara que esta capacitado para:</p>
+
+                        <ul style="text-align: justify;">
+                            <li>
+                                Identificar, describir, analizar y establecer las interrelaciones que existen entre la sociedad y su medio ambiente físico - humano (Diagnóstico).
+                            </li>
+                            <li>
+                                Fijar objetivos que logren el desarrollo personal, regional y nacional.
+                            </li>
+                            <li>
+                                Delinear políticas y estrategias para conseguir los objetivos
+                            </li>
+                            <li>
+                                Elaborar proyectos y planes geográficos.
+                            </li>
+                            <li>
+                                Ejecutar el relevamiento terrestre
+                            </li>
+                            <li>
+                                Elaborar documentos cartográficos básicos y temáticos.
+                            </li>
+                            <li>Realizar levantamientos catastrales multipropósito.</li>
+                            <li>Realizar inventarios de Recursos Naturales.</li>
+                            <li>Manejar Sistemas de Información Geográfica.</li>
+                            <li>Obtener información geográfica de fotografías aéreas, imágenes de radar y satélites.</li>
+                            <li>Planificar y ejecutar proyectos de desarrollo urbano, rural y regional.</li>
+                            <li>Elaborar líneas de acción, planes operativos, programas de trabajo y proyectos de política ambiental.</li>
+                            <li>Asesorar en todos los campos de la actividad humana en general.</li>
+                            <li>Describir, modelizar, interpretar y explicar las prácticas espaciales de los hombres resultado de sus actividades.</li>
+                        </ul>
+
+                        <!--http://www.geografia.umsa.bo/-->
+
+                        <!--<img class="qx-img " style="display: block; margin-left: auto; margin-right: auto;" src="../img/emi/mallas/MallaCurricularPetrolera.jpg" alt="">
+
+                        <div style="margin-top: 20px; margin-bottom: 30px;">
+                            <h3><b><a href="../assets/emi/mallas/MallaCurricularPetrolera.pdf" target="_blank" rel="noopener noreferrer" style="color: black;">Descargar la malla curricular haciendo click Aqui!</a></b></h3>
+                        </div>-->
+                    </div>
+
+                    <div class="tab-pane fade" id="pills-umsa-informatica" role="tabpanel" aria-labelledby="pills-umsa-informatica-tab">
+                        <h2>Información de Informatica</h2>
+
+                        <!--<p style="text-align: center;"><img class="qx-image " style="float: right;" src="../img/emi/carreras/emi-Ingenieria-Sistemas-Electronicos.png" alt="" /></p>-->
+
+                        <p style="text-align: justify;"><strong>Objetivos Generales</strong></p>
+                        <p style="text-align: justify;">Formar profesionales a través de: </p>
+                        <ul style="text-align: justify;">
+                            <li>
+                                Una producción curricular que integre la producción, gestión y desarrollo de la informática e ingeniería de sistemas.
+                            </li>
+                            <li>
+                                Un proceso de gestión institucional eficaz y eficiente. Para que con excelencia profesional y humana sean capaces de cumplir con sus pertinencias y roles en equipos multidisciplinarios, respondiendo al contexto regional, nacional y universal.
+                            </li>
+                        </ul>
+
+                        <p style="text-align: justify;"><strong>Objetivos Especificos</strong></p>
+                        <ul style="text-align: justify;">
+                            <li>Desarrollar un nuevo plan curricular por niveles de profesionalización y especialización en el área de informática e ingeniería de sistemas.</li>
+                            <li>Desarrollar un plan curricular de formación continua auto-sustentable que complemente la formación básica con las nuevas tecnologías.</li>
+                            <li>Promover sistemas de actualización y perfeccionamiento docente en nuevas tecnologías para coadyuvar e innovar el PEA.</li>
+                            <li>Determinar sistemas de medición y evaluación de la calidad de los procesos académicos, investigativos, interacción social e institucional de manera periódica.</li>
+                            <li>Desarrollar sistemas de planificación, organización, control y administración de recursos humanos, financieros y materiales, tomando en cuenta una gestión académica.</li>
+                            <li>Desarrollar programas de post-grado tendientes a la especialización que incluya el doctorado.</li>
+                        </ul>
+                        <!--                        https://informatica.edu.bo/index.php/Objetivos -->
+
+                        <!--<img class="qx-img " style="display: block; margin-left: auto; margin-right: auto;" src="../img/emi/mallas/Malla-Curricular-Ingeniera-Sistemas-Electronicos.jpg" alt="" width="751" height="595">-->
+
+                    </div>
+
+                    <div class="tab-pane fade" id="pills-umsa-derecho" role="tabpanel" aria-labelledby="pills-umsa-derecho-tab">
+                        <h2>Información de Derecho</h2>
+
+                        <!--<p style="text-align: center;"><img class="qx-image " style="float: right;" src="../img/emi/carreras/emi-Ingenieria-Civil.png" alt="" /></p>-->
+
+                        <p style="text-align: justify;"><strong>PERFIL PROFESIONAL</strong></p>
+                        <ul style="text-align: justify;">
+                            <li>Podrá relacionar el Derecho con otras Ciencias Sociales para resolver problemas de la sociedad contemporánea en el ámbito Nacional e Internacional que permitan precisar el sentido en que debe configurarse la norma jurídica.</li>
+                            <li>
+                                Ejercerá su labor con profesionalismo, ética y responsabilidad.
+                            </li>
+                            <li>Tendrá una sólida formación jurídica, que le permita comprender la organización de la sociedad Boliviana.</li>
+                            <li>Adquirirá una visión legal de la comunidad internacional y de los principios que rigen las relaciones entre los países.</li>
+                            <li>
+                                Conocerá la organización del Estado y las normas legales que regulan la administración pública.
+                            </li>
+                            <li>Conocerá la historia del derecho Boliviano y de sus instituciones jurídicas.</li>
+                            <li>Aplicará en la Judicatura, el foro, la función pública y en cualquier ámbito del ejercicio de su profesión, la más avanzada tecnología en informática.</li>
+                            <li>Podrá detectar conflictos de interés, reconocer las dimensiones morales de los problemas y entender la demanda social por transparencia en el ejercicio de la abogacía.</li>
+                            <li>Será capaz de aplicarlo en la satisfacción de necesidades de su entorno y asumirá frente a él una actitud crítica y creativa en el marco del estado de Derecho, con responsabilidad social y ética profesional.</li>
+                            <li>Aplicar el derecho en forma correcta y justa, en la solución de cualquier controversia jurídica.</li>
+                            <li>Elaborar contratos, convenios, constitución de sociedades o cualquier otro acto jurídico similar.</li>
+                            <li>Comprender el entorno en donde desarrollará sus habilidades, así como los recursos y necesidades.</li>
+                            <li>Colaborar como miembro o líder en equipos multidisciplinarios y multiculturales.</li>
+                            <li>Tomar decisiones, ejercer y delegar autoridad, dirigir con liderazgo, promover el desarrollo organizacional y la calidad de vida en el trabajo e investigar y diseñar creativamente propuestas para la solución de problemas.</li>
+                            <li>Capacitado para resolver problemas jurídicos con eficiencia, eficacia y oportunidad.</li>
+                            <li>Juicio crítico basado en la observación científica de la realidad.</li>
+                            <li>Capacidad de argumentación e interpretación jurídica.</li>
+                            <li>Manejar casos civiles, penales, administrativos y de cualquier índole jurídica en los tribunales competentes.</li>
+                            <li>Diseñará, instrumentará, operará y evaluará proyectos de investigación jurídica.</li>
+                            <li>Realizará diagnósticos y estudios de la situación que guardan las actuales instituciones jurídicas y, en particular, las estructuras y procesos de gobierno, proponiendo las reformas conducentes.</li>
+                            <li>Dominará al menos un segundo idioma.</li>
+                            <li>Conocerá el proceso para el establecimiento de una empresa de cualquier tipo.</li>
+                        </ul>
+                        <!--http://www.carrera-derecho.edu.bo/index.php/academico/perfil-profesional-->
+
+                        <!--                        <img class="qx-img " style="display: block; margin-left: auto; margin-right: auto;" src="../img/emi/mallas/MallaCurricularCivil.jpg" alt="" width="751" height="595">
+                        <div style="margin-top: 20px; margin-bottom: 30px;">
+                            <h3><b><a href="../assets/emi/mallas/MallaCurricularCivil.pdf" target="_blank" rel="noopener noreferrer" style="color: black;">Descargar la malla curricular haciendo click Aqui!</a></b></h3>
+                        </div>-->
+                    </div>
+
+                    <div class="tab-pane fade" id="pills-umsa-psicologia" role="tabpanel" aria-labelledby="pills-umsa-psicologia-tab">
+
+                        <h2>Información de Psicologia</h2>
+
+                        <!--<p style="text-align: center;"><img class="qx-image " style="float: right;" src="../img/emi/carreras/emi-Ingenieria-Civil.png" alt="" /></p>-->
+
+                        <p style="text-align: justify;"><strong>PERFIL INSTITUCIONAL</strong></p>
+
+                        <p style="text-align: justify;">Desarrollo de capacidades enmarcadas en valores éticos y de compromiso para lograr el mejoramiento del hombre boliviano y la sociedad, términos de equidad, justicia y libertad. </p>
+                        <p style="text-align: justify;">Desarrollo de una actitud sincrónica con las necesidades sociales e individuales priorizadas </p>
+                        <p style="text-align: justify;">Capacitación en sistemas, modelos métodos y técnicas para detectar, analizar, evaluar e identificar alteraciones y/o desarrollo de la actividad priorizadas. </p>
+                        <p style="text-align: justify;">Capacitación en sistemas, modelos, métodos y técnicas para detectar analizar evaluar e identificar alteraciones y/o desarrollo de la actividad psicológica del hombre y/o comunidad, en el contexto del desarrollo social, educación, salud mental, recursos humanos y producción. </p>
+                        <p style="text-align: justify;">Capacitación en el diseño, elaboración y configuración de estrategias y planificación preventiva del desarrollo de soluciones en la actividad psicológica, para el mejoramiento y/o cambio del desarrollo social, la educación la salud mental, los recursos humanos y la producción. </p>
+                        <p style="text-align: justify;">Capacitación a nivel de conocimientos y ejecución en modelos, sistemas métodos y técnicas para desarrollar acciones específicas de cambio, que favorezcan el desarrollo y bienestar del hombre en relación a los contextos de salud mental, educación, recursos humanos y producción. </p>
+                        <p style="text-align: justify;">Capacitación a nivel de diseño y ejecución de planes y programas de estudio e investigación de la actividad psicológica en los contextos del desarrollo social, salud mental, educación recursos humanos y producción. </p>
+
+                        <!--http://psicologia.umsa.bo/informacion-->
+
+
+                        <!--<img class="qx-img " style="display: block; margin-left: auto; margin-right: auto;" src="../img/emi/mallas/MallaCurricularComercial.jpg" alt="" width="751" height="595">
+                        <div style="margin-top: 20px; margin-bottom: 30px;">
+                            <h3><b><a href="../assets/emi/mallas/MallaCurricularComercial.pdf" target="_blank" rel="noopener noreferrer" style="color: black;">Descargar la malla curricular haciendo click Aqui!</a></b></h3>
+                        </div>-->
+
+                    </div>
+
+                    <div class="tab-pane fade" id="pills-umsa-enfermeria" role="tabpanel" aria-labelledby="pills-umsa-enfermeria-tab">
+
+                        <h2>Información de Enfermeria</h2>
+
+                        <!--                        <p style="text-align: center;"><img class="qx-image " style="float: right;" src="../img/emi/carreras/emi-Ingenieria-Geografica.png" alt="" /></p>-->
+
+                        <p style="text-align: justify;"><strong>Perfil profesional</strong><br />La Carrera de Enfermería de la Facultad de Medicina, Enfermería, Nutrición y Tecnología Médica de la Universidad Mayor de San Andrés, con 75 años de trayectoria y 47 de vida universitaria, es una institución que ha sabido responder al imperativo de formar profesionales enfermeras y enfermeros, científicamente preparados, con conciencia crítica y compromiso de participación activa en la adopción de las políticas, planificación y desarrollo de programas prioritarios, tendientes a la superación de los problemas de salud del país, para lograr un estado óptimo en la población boliviana, adaptando dinámicamente la atención de enfermería a las características sociales, económicas, educacionales y culturales de la comunidad y a los recursos de ésta.</p>
+
+                        <p style="text-align: justify;">Enfermería como profesión, interactúa con otras profesiones del área de la salud, sus acciones van encaminadas a la promoción y fomento de la salud, prevención y tratamiento de las enfermedades, y la rehabilitación de la persona enferma, en los tres niveles de atención</p>
+                        <p style="text-align: justify;">Para enfrentar este reto, la función de docencia de un conjunto de profesionales, docentes calificados y meritorios, con cuarto nivel de formación, se empeña en que los estudiantes adquieran conocimientos, habilidades, conciencia y desarrollo de pensamiento crítico y reflexivo, necesarios e imprescindibles para involucrarse en la comunidad y participar en la solución de problemas de salud que son propias de la nación boliviana.</p>
+                        <p style="text-align: justify;">La función asistencial de enfermería está enfocada al cuidado y bienestar de la persona enferma, encaminada a la PROMOCIÒN, prevención o solución de los problemas de salud, reales o potenciales, cuando los sujetos sanos o enfermos, no pueden resolverlos por sí mismos, ya sea por carencia de información, recursos, impedimento físico o mental, tendiendo a que la persona, familia o comunidad logren la autosuficiencia en su cuidado.</p>
+                        <p style="text-align: justify;">La función administrativa - gerencial le permite organizar, dirigir y controlar los servicios de enfermería, como eje principal de la salud. De igual manera en los tres niveles de atención.</p>
+                        <p style="text-align: justify;">La función educativa-docente, como proceso educativo aplicado en la formación de recursos humanos profesionales de enfermería en un tercer y cuarto nivel educativo, en el que se desarrolla competencias y se potencializa las mismas en beneficio de la sociedad y las instituciones de donde se desarrolla.</p>
+                        <p style="text-align: justify;">La función de investigación, está encaminada a la búsqueda de estrategias para promover tanto el mejoramiento de las tecnologías propias de enfermería, como el desarrollo de los servicios de salud, igualmente en los tres niveles de atención.</p>
+
+                        <!--http://enfermeria.fment.umsa.bo/presentacion-->
+
+
+                        <!--                        <img class="qx-img " style="display: block; margin-left: auto; margin-right: auto;" src="../img/emi/mallas/Mallas-Curriculares-Geografica.jpg" alt="" width="751" height="595">
+                        <div style="margin-top: 20px; margin-bottom: 30px;">
+                            <h3><b><a href="../assets/emi/mallas/Mallas_Curricular_Geografica.pdf" target="_blank" rel="noopener noreferrer" style="color: black;">Descargar la malla curricular haciendo click Aqui!</a></b></h3>
+                        </div>-->
+
+                    </div>
+
+                    <div class="tab-pane fade" id="pills-umsa-electromecanica" role="tabpanel" aria-labelledby="pills-umsa-electromecanica-tab">
+
+                        <h2>Información de Electro Mecanica</h2>
+
+                        <!--<p style="text-align: center;"><img class="qx-image " style="float: right;" src="../img/emi/carreras/emi-Ingenieria-Financiera.png" alt="" /></p>
+-->
+                        <p style="text-align: justify;"><strong>Perfil Profesional</strong><br />Los profesionales ELECTROMECÁNICOS formados a Nivel de TÉCNICO SUPERIOR Y LICENCIATURA, son profesionales altamente calificados, dotados de conocimientos teóricos-prácticos, teóricos-metodológicos, capaces de investigar, desarrollar, generar, aplicar, teorías en el objeto de acción:</p>
+
+                        <p style="text-align: justify;"><i>"La energía eléctrica y mecánica; máquinas y aparatos eléctricos, electrónicos y mecánicos; y la información científica y técnica"</i></p>
+                        <p style="text-align: justify;">De tal manera que:</p>
+                        <p style="text-align: justify;">El profesional ELECTROMECÁNICO a NIVEL DE TÉCNICO SUPERIOR, desarrolla conocimientos, habilidades y destrezas en la producción, mantenimiento, operación, manipulación y ejecución de procesos de producción e industriales.</p>
+                        <p style="text-align: justify;">El profesional ELECTROMECÁNICO A NIVEL DE LICENCIATURA, desarrolla conocimientos, habilidades y destrezas en la realización de Diseños, proyectos industriales é innovación tecnológica, planificación, organización, administración, asesoramiento, consultoría y la investigación básica y aplicada.</p>
+                        <p style="text-align: justify;">Tanto el Profesional ELECTROMECÁNICO formado a NIVEL DE TÉCNICO SUPERIOR Y LICENCIATURA, serán capaces de desarrollar sus actividades profesionales en forma paralela al desarrollo de la sociedad en todos sus aspectos: biológico, económicos, cultural y político y coadyuvar en el proceso de desarrollo tecnológico y científico de nuestro país.</p>
+                        <p style="text-align: justify;"><strong>Mercado profesional</strong></p>
+                        <p style="text-align: justify;">El profesional Electromecánico formado a nivel Técnico Superior y Licenciatura, desarrolla a su actividad profesional en el entorno de:</p>
+                        <ul style="text-align: justify;">
+                            <li>Industria extractiva de minerales.</li>
+                            <li>Industria de productos metálicos, maquinaria y equipo.</li>
+                            <li>Industria agrícola y alimenticia.</li>
+                            <li>Industrias textiles.</li>
+                            <li>Industria energética.</li>
+                            <li>Empresas de servicios y mantenimiento.</li>
+                            <li>Empresas de servicios profesionales y consultoría.</li>
+                            <li>Institutos de investigación y desarrollo tecnológio.</li>
+                            <li>Institutos de desarrollo regional y nacional.</li>
+                            <li>Empresas de refrigeración y aire acondicionado.</li>
+
+                        </ul>
+
+                        <!--http://elecmecanica.umsa.bo/-->
+
+
+                        <!--<img class="qx-img " style="display: block; margin-left: auto; margin-right: auto;" src="../img/emi/mallas/Mallas-Curriculares-Financiera.jpg" alt="" width="751" height="595">
+                        <div style="margin-top: 20px; margin-bottom: 30px;">
+                            <h3><b><a href="../assets/emi/mallas/Mallas_Curricular_Financiera.pdf" target="_blank" rel="noopener noreferrer" style="color: black;">Descargar la malla curricular haciendo click Aqui!</a></b></h3>
+                        </div>-->
+
+                    </div>
+
+                    <div class="tab-pane fade" id="pills-umsa-petrolera" role="tabpanel" aria-labelledby="pills-umsa-petrolera-tab">
+                        <h2>Información de Ingenieria Petrolera</h2>
+
+                        <!--<p style="text-align: center;"><img class="qx-image " style="float: right;" src="../img/emi/carreras/emi-Ingenieria-Industrial.png" alt="" /></p>-->
+
+                        <p style="text-align: justify;"><strong>NUESTRA MISION</strong></p>
+                        <p style="text-align: justify;">Nuestra misión es impartir educación superior de calidad y excelencia, para formar profesionales idóneos de competitividad para el Desarrollo Nacional.
+                            En el Campo especifico, la MISIÓN de la Carrera esta en desarrollar sus actividades académicas en función a las tendencias de la Industria Petrolera Nacional, formando profesionales especializados de competencia y calidad para cubrir toda la gama de actividades que se desarrollan en este Campo, con una visión de proyección continua hacia el futuro, para que el Ingeniero Graduado adecue sus conocimientos, su capacidad y sus dotes humanísticos al avance continuo de las Ciencias de la Ingeniería.</p>
+                        <p style="text-align: justify;"><strong>NUESTRA VISIÓN</strong></p>
+                        <p style="text-align: justify;">La visión consta en responder a las necesidad de formar profesionales capaces de cumplir las funciones que se le asigne en el campo de la producción y administración de Proyectos Petroleros y Gasíferos. En este marco esta implícita la interacción social como actividad que permita la relación del profesional con la realidad de la sociedad boliviana.
+                            La carrera de Ingeniería Petrolera, tanto ene le pasado como en el presente y proyectándose al futuro, es consiente de la calidad de recursos que se utiliza en la Industria Petrolera, que tienen una alto costo y por tanto, la única forma de tender los requerimientos es aplicando disciplinas de una Ingeniería Contemporánea, caracterizada por Curriculum flexibles y abiertos, apoyado por medios tecnológicos modernos y acordes con la dinámica del Desarrollo de esta Industria.</p>
+
+                        <!--http://petrolera.umsa.edu.bo/?page_id=37-->
+
+
+                        <!--                        <img class="qx-img " style="display: block; margin-left: auto; margin-right: auto;" src="../img/emi/mallas/MallaCurricularIndustrial.jpg" alt="" width="751" height="595">
+                        <div style="margin-top: 20px; margin-bottom: 30px;">
+                            <h3><b><a href="../assets/emi/mallas/MallaCurricularIndustrial.pdf" target="_blank" rel="noopener noreferrer" style="color: black;">Descargar la malla curricular haciendo click Aqui!</a></b></h3>
+                        </div>-->
+
+
+                    </div>
+
+
+                    <div class="tab-pane fade" id="u-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab">
+                        <section class="bg-light page-section">
+                            ...
+                        </section>
+                    </div>
+
+
+                </div>
             </div>
 
         </div>
-    </section>
 
+    </div>
 
 
 
@@ -161,7 +569,6 @@
 
     <!-- Custom scripts for this template -->
     <script src="../js/agency.min.js"></script>
-
 </body>
 
 </html>

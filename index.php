@@ -133,7 +133,8 @@
                         <i class="fas fa-shopping-cart fa-stack-1x fa-inverse"></i>
                     </span>
                     <h4 class="service-heading">Tours</h4>
-                    <p class="text-muted">Cada fin de año, ofrecemos tours por las distintas universidades de La Paz, para que pueda tomar la mejor desicion hacia su futuro.</p>
+                    <p class="text-muted">Cada fin de año, ofrecemos tours por las distintas universidades de La Paz, para que pueda tomar la mejor desicion hacia su futuro. <br>Escribemos para más información.</p>
+                    <a href="#contact"><button class="btn btn-primary" type="button">Contactanos</button></a>
                 </div>
                 <div class="col-md-4">
                     <span class="fa-stack fa-4x">
@@ -142,15 +143,16 @@
                     </span>
                     <h4 class="service-heading">Test de Aptitud</h4>
                     <p class="text-muted">Aun no sabes que estudiar, no te preocupes nuestro equipo desarrollo un test que te ayudara a ver que podrias estudiar y en que areas te manejas.</p>
-                    <a href="cuestionario/1.html"><button class="btn btn-primary" type="button">Toma la prueba</button></a>
+                    <a href="cuestionario/Test.html"><button class="btn btn-primary" type="button">Toma la prueba</button></a>
                 </div>
                 <div class="col-md-4">
                     <span class="fa-stack fa-4x">
                         <i class="fas fa-circle fa-stack-2x text-primary"></i>
                         <i class="fas fa-lock fa-stack-1x fa-inverse"></i>
                     </span>
-                    <h4 class="service-heading">Web Security</h4>
-                    <p class="text-muted">Algo interesante que podamos desarrollar, y que sera no lo se tu dime -_-.</p>
+                    <h4 class="service-heading">Universidades</h4>
+                    <p class="text-muted">Dale un vistazo a información acerca de las universidades disponibles en La Paz, Bolivia. <br><br><br></p>
+                    <a href="#portfolio"><button class="btn btn-primary" type="button">Revisa</button></a>
                 </div>
             </div>
         </div>
@@ -583,21 +585,20 @@
                             <div class="modal-body">
                                 <!-- Project Details Go Here -->
                                 <h2 class="text-uppercase">Escuela Militar de Ingenieria</h2>
-                                <p class="item-intro text-muted">Escribir algo acerca de la emi :</p>
+                                <p class="item-intro text-muted">Puedes encontrarnos en:</p>
                                 <!--<img class="img-fluid d-block mx-auto" src="img/portfolio/01-full.jpg" alt="">-->
-                                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3824.815393804398!2d-68.0883420935948!3d-16.535414895386864!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x915f212398c5d1b5%3A0x1e20bc0a1880e88c!2sEscuela%20Militar%20de%20Ingenier%C3%ADa%2C%20Av%20Rafael%20Pab%C3%B3n%2C%20La%20Paz!5e0!3m2!1ses-419!2sbo!4v1585793812149!5m2!1ses-419!2sbo" width="800" height="600" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
-                                <p>Aqui se debe poner mucha informacion general acerca de la emi para los lectores de forma que vean de forma muy general</p>
+                                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3824.815393804398!2d-68.0883420935948!3d-16.535414895386864!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x915f212398c5d1b5%3A0x1e20bc0a1880e88c!2sEscuela%20Militar%20de%20Ingenier%C3%ADa%2C%20Av%20Rafael%20Pab%C3%B3n%2C%20La%20Paz!5e0!3m2!1ses-419!2sbo!4v1585793812149!5m2!1ses-419!2sbo" width="800" height="600" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0" class="img-fluid tam"></iframe>
+                                <p>La Escuela Militar de Ingeniería es un centro de estudios con especialidad en ingeniería de Bolivia. </p>
+
                                 <ul class="list-inline">
-                                    <li>Lugar </li>
-                                    <li>Cosas Importantes</li>
-                                    <li>Category: Illustration</li>
+                                    <li><b>Lugar:</b> EMI, Av Rafael Pabón, La Paz </li>
+                                    <li><b>Costo:</b> 11 365 Bs.</li>
+                                    <li><b>Teléfonos:</b> 2435266 - 2431641</li>
                                 </ul>
                                 <button class="btn btn-primary" data-dismiss="modal" type="button">
                                     <i class="fas fa-times"></i>
                                     Cerrar</button>
-                                <a href="prueba.html"><button class="btn btn-primary" type="button">
-
-                                        Mas informacion</button></a>
+                                <a href="universidades/emi.html"><button class="btn btn-primary" type="button">Mas informacion</button></a>
 
                             </div>
                         </div>
@@ -621,18 +622,19 @@
                         <div class="col-lg-8 mx-auto">
                             <div class="modal-body">
                                 <!-- Project Details Go Here -->
-                                <h2 class="text-uppercase">Project Name</h2>
-                                <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
-                                <img class="img-fluid d-block mx-auto" src="img/portfolio/02-full.jpg" alt="">
-                                <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
+                                <h2 class="text-uppercase">Universidad Mayor de San Andrés</h2>
+                                <p class="item-intro text-muted">Puedes encontrarnos en:</p>
+                                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3216.7767904692187!2d-68.13020029140215!3d-16.505191837386597!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x915f206520793ddd%3A0x53f6df346cc69976!2sUniversidad%20Mayor%20de%20San%20Andres!5e0!3m2!1ses!2sbo!4v1588549968965!5m2!1ses!2sbo" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                                <p>La Universidad Mayor de San Andrés es la principal universidad pública del Estado Plurinacional de Bolivia.</p>
                                 <ul class="list-inline">
-                                    <li>Date: January 2017</li>
-                                    <li>Client: Explore</li>
-                                    <li>Category: Graphic Design</li>
+                                    <li><b>Lugar:</b> J.J.Perez, La Paz</li>
+                                    <li><b>Fundación:</b> 25 de octubre de 1830, La Paz</li>
+                                    <li><b>Teléfono:</b> 2 2441963</li>
                                 </ul>
                                 <button class="btn btn-primary" data-dismiss="modal" type="button">
                                     <i class="fas fa-times"></i>
-                                    Close Project</button>
+                                    Cerrar</button>
+                                <a href="universidades/umsa.html"><button class="btn btn-primary" type="button">Mas informacion</button></a>
                             </div>
                         </div>
                     </div>
@@ -655,18 +657,19 @@
                         <div class="col-lg-8 mx-auto">
                             <div class="modal-body">
                                 <!-- Project Details Go Here -->
-                                <h2 class="text-uppercase">Project Name</h2>
-                                <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
-                                <img class="img-fluid d-block mx-auto" src="img/portfolio/03-full.jpg" alt="">
-                                <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
+                                <h2 class="text-uppercase">Universidad Católica Boliviana</h2>
+                                <p class="item-intro text-muted">Puedes encontrarnos en:</p>
+                                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3216.476853387453!2d-68.11429697215662!3d-16.523211726863373!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x915f20ee187a3103%3A0x2f2bb2b7df32a24d!2sUniversidad%20Cat%C3%B3lica%20Boliviana%20%22San%20Pablo%22%20Regional%20La%20Paz!5e0!3m2!1ses!2sbo!4v1588550916028!5m2!1ses!2sbo" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                                <p>La Universidad Católica Boliviana "San Pablo", es una universidad perteneciente al Sistema de la Universidad Boliviana, con sede principal en la ciudad de La Paz, Bolivia.</p>
                                 <ul class="list-inline">
-                                    <li>Date: January 2017</li>
-                                    <li>Client: Finish</li>
-                                    <li>Category: Identity</li>
+                                    <li><b>Lugar:</b> Av. 14 de Septiembre, Calle 2, La Paz </li>
+                                    <li><b>Costo:</b> 11 365 Bs.</li>
+                                    <li><b>Teléfonos:</b> 2 2782222</li>
                                 </ul>
-                                <button class="btn btn-primary" data-dismiss="modal" type="button">
-                                    <i class="fas fa-times"></i>
-                                    Close Project</button>
+                                <button class="btn btn-primary" data-dismiss="modal" type="button" style="background-color: red; border-color:red;">
+                                    <i class="fas fa-times" ></i>
+                                    Cerrar</button>
+                                <a href="universidades/ucb.html"><button class="btn btn-primary" type="button" style="background-color: #212529; border-color:#212529;">Mas informacion</button></a>
                             </div>
                         </div>
                     </div>
@@ -689,18 +692,20 @@
                         <div class="col-lg-8 mx-auto">
                             <div class="modal-body">
                                 <!-- Project Details Go Here -->
-                                <h2 class="text-uppercase">Project Name</h2>
-                                <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
-                                <img class="img-fluid d-block mx-auto" src="img/portfolio/04-full.jpg" alt="">
-                                <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
+                                <h2 class="text-uppercase">UNICEN</h2>
+                                <p class="item-intro text-muted">Puedes encontrarnos en:</p>
+                                <!--<img class="img-fluid d-block mx-auto" src="img/portfolio/04-full.jpg" alt="">-->
+                                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3825.5526304488653!2d-68.12086165009599!3d-16.49817528856128!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x915f2042864f2805%3A0x84159147002a59ff!2sUNICEN!5e0!3m2!1ses!2sbo!4v1588707452082!5m2!1ses!2sbo" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                                <p>UNICEN estableció en tres principales ciudades de Bolivia un modelo educativo comprometido con el futuro laboral de sus profesionales.</p>
                                 <ul class="list-inline">
-                                    <li>Date: January 2017</li>
-                                    <li>Client: Lines</li>
-                                    <li>Category: Branding</li>
+                                    <li><b>Lugar:</b> Av. Brasil, La Paz </li>
+                                    <li><b>Costo:</b> 1 365 Bs.</li>
+                                    <li><b>Teléfonos:</b> 60651455</li>
                                 </ul>
                                 <button class="btn btn-primary" data-dismiss="modal" type="button">
                                     <i class="fas fa-times"></i>
-                                    Close Project</button>
+                                    Cerrar</button>
+                                <a href="universidades/unicen.html"><button class="btn btn-primary" type="button">Mas informacion</button></a>
                             </div>
                         </div>
                     </div>
@@ -723,18 +728,20 @@
                         <div class="col-lg-8 mx-auto">
                             <div class="modal-body">
                                 <!-- Project Details Go Here -->
-                                <h2 class="text-uppercase">Project Name</h2>
-                                <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
-                                <img class="img-fluid d-block mx-auto" src="img/portfolio/05-full.jpg" alt="">
-                                <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
+                                <h2 class="text-uppercase">Unuversidad Privada Boliviana</h2>
+                                <p class="item-intro text-muted">Puedes encontrarnos en:</p>
+                                <!--<img class="img-fluid d-block mx-auto" src="img/portfolio/04-full.jpg" alt="">-->
+                                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3825.5526304488653!2d-68.12086165009599!3d-16.49817528856128!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x915f2042864f2805%3A0x84159147002a59ff!2sUNICEN!5e0!3m2!1ses!2sbo!4v1588707452082!5m2!1ses!2sbo" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                                <p>UNICEN estableció en tres principales ciudades de Bolivia un modelo educativo comprometido con el futuro laboral de sus profesionales.</p>
                                 <ul class="list-inline">
-                                    <li>Date: January 2017</li>
-                                    <li>Client: Southwest</li>
-                                    <li>Category: Website Design</li>
+                                    <li><b>Lugar:</b> Av. Brasil, La Paz </li>
+                                    <li><b>Costo:</b> 1 365 Bs.</li>
+                                    <li><b>Teléfonos:</b> 60651455</li>
                                 </ul>
                                 <button class="btn btn-primary" data-dismiss="modal" type="button">
                                     <i class="fas fa-times"></i>
-                                    Close Project</button>
+                                    Cerrar</button>
+                                <a href="universidades/upb.html"><button class="btn btn-primary" type="button">Mas informacion</button></a>
                             </div>
                         </div>
                     </div>
@@ -757,7 +764,7 @@
                         <div class="col-lg-8 mx-auto">
                             <div class="modal-body">
                                 <!-- Project Details Go Here -->
-                                <h2 class="text-uppercase">Project Name</h2>
+                                <h2 class="text-uppercase">UNIVALLE</h2>
                                 <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
                                 <img class="img-fluid d-block mx-auto" src="img/portfolio/06-full.jpg" alt="">
                                 <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
@@ -768,7 +775,8 @@
                                 </ul>
                                 <button class="btn btn-primary" data-dismiss="modal" type="button">
                                     <i class="fas fa-times"></i>
-                                    Close Project</button>
+                                    Cerrar</button>
+                                <a href="universidades/univalle.html"><button class="btn btn-primary" type="button">Mas informacion</button></a>
                             </div>
                         </div>
                     </div>

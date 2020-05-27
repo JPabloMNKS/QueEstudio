@@ -69,7 +69,7 @@
                                             <button type="button" class="btn btn-warning dropdown-toggle dropdown-icon" data-toggle="dropdown">'.$_SESSION['nameAdmin'].'
                                             </button>
                                             <div class="dropdown-menu" role="menu">
-                                                <a class="dropdown-item" href="admin/index.html">Administración</a>
+                                                <a class="dropdown-item" href="admin/index.php">Administración</a>
                                                 <a class="dropdown-item" href="#team">Opcion genial</a>
                                                 <div class="dropdown-divider"></div>
                                                 <a class="dropdown-item" href="procesos/logout.php">Cerrar Sesión</a>
@@ -96,7 +96,7 @@
                             }else{
                                 echo ' 
                                     <li class="nav-item">
-                                        <a class="nav-link js-scroll-trigger" href="iniciosesion.html">Inciar Sesión</a>
+                                        <a class="nav-link js-scroll-trigger" href="iniciosesion.php">Inciar Sesión</a>
                                     </li>
                                  ';
                             }
@@ -111,7 +111,7 @@
         <div class="container">
             <div class="intro-text">
                 <div class="intro-lead-in">Bienvenido a nuestra pagina</div>
-                <div class="intro-heading text-uppercase">Listo para el futuro</div>
+                <div class="intro-heading text-uppercase">¡Listo para el futuro!</div>
                 <a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger" href="#services">Empezemos!</a>
             </div>
         </div>
@@ -133,7 +133,7 @@
                         <i class="fas fa-shopping-cart fa-stack-1x fa-inverse"></i>
                     </span>
                     <h4 class="service-heading">Tours</h4>
-                    <p class="text-muted">Cada fin de año, ofrecemos tours por las distintas universidades de La Paz, para que pueda tomar la mejor desicion hacia su futuro. <br>Escribemos para más información.</p>
+                    <p class="text-muted">Ofrecemos tours por las distintas universidades de La Paz, para que pueda tomar la mejor desicion hacia su futuro. <br>Escribemos para más información.</p>
                     <a href="#contact"><button class="btn btn-primary" type="button">Contactanos</button></a>
                 </div>
                 <div class="col-md-4">
@@ -143,7 +143,7 @@
                     </span>
                     <h4 class="service-heading">Test de Aptitud</h4>
                     <p class="text-muted">Aun no sabes que estudiar, no te preocupes nuestro equipo desarrollo un test que te ayudara a ver que podrias estudiar y en que areas te manejas.</p>
-                    <a href="cuestionario/Test.html"><button class="btn btn-primary" type="button">Toma la prueba</button></a>
+                    <a href="cuestionario/Test.php"><button class="btn btn-primary" type="button">Toma la prueba</button></a>
                 </div>
                 <div class="col-md-4">
                     <span class="fa-stack fa-4x">
@@ -261,7 +261,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
-                    <h2 class="section-heading text-uppercase">Acerca de Nosotros</h2>
+                    <h2 class="section-heading text-uppercase">Quienes Nosotros</h2>
                     <h3 class="section-subheading text-muted">Aqui un poco de que es nuestra institucion</h3>
                 </div>
             </div>
@@ -296,34 +296,7 @@
                                 </div>
                             </div>
                         </li>
-                        <li>
-                            <div class="timeline-image">
-                                <img class="rounded-circle img-fluid" src="img/about/3.jpg" alt="">
-                            </div>
-                            <div class="timeline-panel">
-                                <div class="timeline-heading">
-                                    <h4>TRAYECTORIA</h4>
-                                    <h4 class="subheading">Transition to Full Service</h4>
-                                </div>
-                                <div class="timeline-body">
-                                    <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p>
-                                </div>
-                            </div>
-                        </li>
-                        <li class="timeline-inverted">
-                            <div class="timeline-image">
-                                <img class="rounded-circle img-fluid" src="img/about/4.jpg" alt="">
-                            </div>
-                            <div class="timeline-panel">
-                                <div class="timeline-heading">
-                                    <h4>NACIMIENTO</h4>
-                                    <h4 class="subheading">Phase Two Expansion</h4>
-                                </div>
-                                <div class="timeline-body">
-                                    <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p>
-                                </div>
-                            </div>
-                        </li>
+
                         <li class="timeline-inverted">
                             <div class="timeline-image">
                                 <h4>Por un
@@ -454,7 +427,7 @@
     </section>
 
     <!-- Clients -->
-    <section class="py-5">
+    <!--<section class="py-5">
         <div class="container">
             <div class="row">
                 <div class="col-md-3 col-sm-6">
@@ -479,7 +452,7 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section>-->
 
     <!-- Contact -->
     <section class="page-section" id="contact">
@@ -492,25 +465,27 @@
             </div>
             <div class="row">
                 <div class="col-lg-12">
-                    <form id="contactForm" name="sentMessage" novalidate="novalidate">
+
+                    <!--<form id="contactForm" name="sentMessage" novalidate="novalidate">-->
+                    <form action="procesos/regMensajes.php" method="post">
                         <div class="row">
                             <div class="col-md-6">
                                 <div class="form-group">
-                                    <input class="form-control" id="name" type="text" placeholder="Tu Nombre *" required="required" data-validation-required-message="Please enter your name.">
+                                    <input class="form-control" id="name" name="nombre-mensaje" type="text" placeholder="Ingrese su Nombre *" required="required" data-validation-required-message="Please enter your name.">
                                     <p class="help-block text-danger"></p>
                                 </div>
                                 <div class="form-group">
-                                    <input class="form-control" id="email" type="email" placeholder="Tu Correo Electronico *" required="required" data-validation-required-message="Please enter your email address.">
+                                    <input class="form-control" id="email" name="correo-mensaje" type="email" placeholder="Ingrese su Correo Electronico *" required="required" data-validation-required-message="Please enter your email address.">
                                     <p class="help-block text-danger"></p>
                                 </div>
                                 <div class="form-group">
-                                    <input class="form-control" id="phone" type="tel" placeholder="Tu Telefono *" required="required" data-validation-required-message="Please enter your phone number.">
+                                    <input class="form-control" id="phone" name="telefono-mensaje" type="tel" placeholder="Ingrese su Telefono *" required="required" data-validation-required-message="Please enter your phone number.">
                                     <p class="help-block text-danger"></p>
                                 </div>
                             </div>
                             <div class="col-md-6">
                                 <div class="form-group">
-                                    <textarea class="form-control" id="message" placeholder="Tu mensaje*" required="required" data-validation-required-message="Please enter a message."></textarea>
+                                    <textarea class="form-control" id="message" name="text-mensaje" placeholder="Tu mensaje*" required="required" data-validation-required-message="Please enter a message."></textarea>
                                     <p class="help-block text-danger"></p>
                                 </div>
                             </div>
@@ -521,6 +496,7 @@
                             </div>
                         </div>
                     </form>
+
                 </div>
             </div>
         </div>
@@ -587,12 +563,14 @@
                                 <h2 class="text-uppercase">Escuela Militar de Ingenieria</h2>
                                 <p class="item-intro text-muted">Puedes encontrarnos en:</p>
                                 <!--<img class="img-fluid d-block mx-auto" src="img/portfolio/01-full.jpg" alt="">-->
-                                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3824.815393804398!2d-68.0883420935948!3d-16.535414895386864!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x915f212398c5d1b5%3A0x1e20bc0a1880e88c!2sEscuela%20Militar%20de%20Ingenier%C3%ADa%2C%20Av%20Rafael%20Pab%C3%B3n%2C%20La%20Paz!5e0!3m2!1ses-419!2sbo!4v1585793812149!5m2!1ses-419!2sbo" width="800" height="600" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0" class="img-fluid tam"></iframe>
+                                <!--                                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3824.815393804398!2d-68.0883420935948!3d-16.535414895386864!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x915f212398c5d1b5%3A0x1e20bc0a1880e88c!2sEscuela%20Militar%20de%20Ingenier%C3%ADa%2C%20Av%20Rafael%20Pab%C3%B3n%2C%20La%20Paz!5e0!3m2!1ses-419!2sbo!4v1585793812149!5m2!1ses-419!2sbo" width="800" height="600" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0" class="img-fluid tam"></iframe>-->
+                                 <img src="img/emi/persona2.jpg" alt="" class="rounded mx-auto d-block">
+                                
                                 <p>La Escuela Militar de Ingeniería es un centro de estudios con especialidad en ingeniería de Bolivia. </p>
 
                                 <ul class="list-inline">
                                     <li><b>Lugar:</b> EMI, Av Rafael Pabón, La Paz </li>
-                                    <li><b>Costo:</b> 11 365 Bs.</li>
+                                    <li><b>Costo:</b> 11 365 Bs. Semestral</li>
                                     <li><b>Teléfonos:</b> 2435266 - 2431641</li>
                                 </ul>
                                 <button class="btn btn-primary" data-dismiss="modal" type="button">
@@ -663,11 +641,11 @@
                                 <p>La Universidad Católica Boliviana "San Pablo", es una universidad perteneciente al Sistema de la Universidad Boliviana, con sede principal en la ciudad de La Paz, Bolivia.</p>
                                 <ul class="list-inline">
                                     <li><b>Lugar:</b> Av. 14 de Septiembre, Calle 2, La Paz </li>
-                                    <li><b>Costo:</b> 11 365 Bs.</li>
+                                    <li><b>Costo:</b> 11 365 Bs. Semestral</li>
                                     <li><b>Teléfonos:</b> 2 2782222</li>
                                 </ul>
                                 <button class="btn btn-primary" data-dismiss="modal" type="button" style="background-color: red; border-color:red;">
-                                    <i class="fas fa-times" ></i>
+                                    <i class="fas fa-times"></i>
                                     Cerrar</button>
                                 <a href="universidades/ucb.html"><button class="btn btn-primary" type="button" style="background-color: #212529; border-color:#212529;">Mas informacion</button></a>
                             </div>
@@ -699,7 +677,7 @@
                                 <p>UNICEN estableció en tres principales ciudades de Bolivia un modelo educativo comprometido con el futuro laboral de sus profesionales.</p>
                                 <ul class="list-inline">
                                     <li><b>Lugar:</b> Av. Brasil, La Paz </li>
-                                    <li><b>Costo:</b> 1 365 Bs.</li>
+                                    <li><b>Costo:</b> 1 365 Bs. Semestral</li>
                                     <li><b>Teléfonos:</b> 60651455</li>
                                 </ul>
                                 <button class="btn btn-primary" data-dismiss="modal" type="button">
@@ -735,7 +713,7 @@
                                 <p>UNICEN estableció en tres principales ciudades de Bolivia un modelo educativo comprometido con el futuro laboral de sus profesionales.</p>
                                 <ul class="list-inline">
                                     <li><b>Lugar:</b> Av. Brasil, La Paz </li>
-                                    <li><b>Costo:</b> 1 365 Bs.</li>
+                                    <li><b>Costo:</b> 1 365 Bs. Semestral</li>
                                     <li><b>Teléfonos:</b> 60651455</li>
                                 </ul>
                                 <button class="btn btn-primary" data-dismiss="modal" type="button">

@@ -10,11 +10,41 @@ $totalA = mysqli_num_rows($consA);
 
 if($totalA>0){
     if(consultasSQL::DeleteSQL('administrador', "correo='".$correoAd."'")){
-        echo '<script>location.href="../admin/vacio2.php";</script>';
+        echo '
+                <script>  
+                  var r = confirm("Administrador eliminado con exito!");
+                  if (r == true) {
+                    location.href="../admin/index.php";
+                  } else {
+                    location.href="../admin/index.php";
+                  }
+                
+                </script>
+            ';
     }else{
-       echo '<br><p class="lead text-center">Ha ocurrido un error.<br>Por favor intente nuevamente</p>'; 
+       echo '
+                <script>  
+                  var r = confirm("A ocurrido un error, intentelo de nuevo");
+                  if (r == true) {
+                    location.href="../admin/index.php";
+                  } else {
+                    location.href="../admin/index.php";
+                  }
+                
+                </script>
+            '; 
     }
 }else{
-    echo '<br><p class="lead text-center">El nombre del administrador no existe</p>';
+    echo '
+                <script>  
+                  var r = confirm("El nombre del administrador no existe");
+                  if (r == true) {
+                    location.href="../admin/index.php";
+                  } else {
+                    location.href="../admin/index.php";
+                  }
+                
+                </script>
+            ';
 }
 

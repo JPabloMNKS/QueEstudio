@@ -1,3 +1,9 @@
+<?php
+    include '../conexion/configServer.php';
+    include '../conexion/consulSQL.php';
+    include '../procesos/panelSeguridad.php';
+?>
+
 <!DOCTYPE html>
 <!--
 This is a starter template page. Use this page to start your new project from
@@ -33,12 +39,12 @@ scratch. This page gets rid of all links and provides the needed markup only.
                 <li class="nav-item d-none d-sm-inline-block">
                     <a href="index3.html" class="nav-link">Home</a>
                 </li>
-                <li class="nav-item d-none d-sm-inline-block">
+                <!--                <li class="nav-item d-none d-sm-inline-block">
                     <a href="#" class="nav-link">Contact</a>
-                </li>
+                </li>-->
             </ul>
             <!-- SEARCH FORM -->
-            <form class="form-inline ml-3">
+            <!--            <form class="form-inline ml-3">
                 <div class="input-group input-group-sm">
                     <input class="form-control form-control-navbar" type="search" placeholder="Search" aria-label="Search">
                     <div class="input-group-append">
@@ -47,7 +53,8 @@ scratch. This page gets rid of all links and provides the needed markup only.
                         </button>
                     </div>
                 </div>
-            </form>
+            </form>-->
+
         </nav>
         <!-- /.navbar -->
 
@@ -66,7 +73,11 @@ scratch. This page gets rid of all links and provides the needed markup only.
                         <img src="dist/img/user2-160x160.jpg" class="img-circle elevation-2" alt="User Image">
                     </div>
                     <div class="info">
-                        <a href="#" class="d-block">Nombre de la persona registrada</a>
+                        <a href="#" class="d-block">
+                            <?php
+                            echo $_SESSION['nameAdmin']
+                            ?>
+                        </a>
                     </div>
                 </div>
 
@@ -75,7 +86,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
                     <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
                         <!-- Add icons to the links using the .nav-icon class
                with font-awesome or any other icon font library -->
-                        <li class="nav-item has-treeview menu-open">
+                        <!--                        <li class="nav-item has-treeview menu-open">
                             <a href="#" class="nav-link active">
                                 <i class="nav-icon fas fa-tachometer-alt"></i>
                                 <p>
@@ -84,12 +95,14 @@ scratch. This page gets rid of all links and provides the needed markup only.
                                 </p>
                             </a>
                             <ul class="nav nav-treeview">
+
                                 <li class="nav-item">
                                     <a href="#" class="nav-link active">
                                         <i class="far fa-circle nav-icon"></i>
                                         <p>Active Page</p>
                                     </a>
                                 </li>
+
                                 <li class="nav-item">
                                     <a href="#" class="nav-link">
                                         <i class="far fa-circle nav-icon"></i>
@@ -97,8 +110,44 @@ scratch. This page gets rid of all links and provides the needed markup only.
                                     </a>
                                 </li>
                             </ul>
+                        </li>-->
+
+                        <li class="nav-item">
+                            <a href="index.php" class="nav-link active">
+                                <p>Inicio</p>
+                            </a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a href="administradores.php" class="nav-link">
+                                <!--<i class="far fa-circle nav-icon"></i>-->
+                                <p>Registrar Administradores</p>
+                            </a>
                         </li>
                         <li class="nav-item">
+                            <a href="mensajes.php" class="nav-link">
+                                <p>Mensajes</p>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="usuarios.php" class="nav-link">
+                                <p>Usuarios</p>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link inactive">
+                                <p>Tour</p>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link inactive">
+                                <p>Editar Test Vocal</p>
+                            </a>
+                        </li>
+
+                       
+                       
+                        <!--                        <li class="nav-item">
                             <a href="#" class="nav-link">
                                 <i class="nav-icon fas fa-th"></i>
                                 <p>
@@ -106,7 +155,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
                                     <span class="right badge badge-danger">New</span>
                                 </p>
                             </a>
-                        </li>
+                        </li>-->
                     </ul>
                 </nav>
                 <!-- /.sidebar-menu -->
@@ -121,12 +170,12 @@ scratch. This page gets rid of all links and provides the needed markup only.
                 <div class="container-fluid">
                     <div class="row mb-2">
                         <div class="col-sm-6">
-                            <h1 class="m-0 text-dark">Starter Page</h1>
+                            <h1 class="m-0 text-dark">Inicio</h1>
                         </div><!-- /.col -->
                         <div class="col-sm-6">
                             <ol class="breadcrumb float-sm-right">
-                                <li class="breadcrumb-item"><a href="#">Home</a></li>
-                                <li class="breadcrumb-item active">Starter Page</li>
+                                <li class="breadcrumb-item"><a href="../index.php">Donde Estudio</a></li>
+                                <li class="breadcrumb-item active">Inicio</li>
                             </ol>
                         </div><!-- /.col -->
                     </div><!-- /.row -->
@@ -141,7 +190,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
                         <div class="col-lg-6">
                             <div class="card">
                                 <div class="card-body">
-                                    <h5 class="card-title">Card title</h5>
+                                    <h5 class="card-title">Mensaje</h5>
 
                                     <p class="card-text">
                                         Some quick example text to build on the card title and make up the bulk of the card's

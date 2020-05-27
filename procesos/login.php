@@ -21,7 +21,7 @@
             $_SESSION['nombreAdmin']=$correo;
             $_SESSION['claveAdmin']=$contrasena;
                 
-            echo '<script> location.href="../admin/index.html"; </script>';
+            echo '<script> location.href="../admin/index.php"; </script>';
             }
             else{
                 $UserC=mysqli_num_rows($verUser);

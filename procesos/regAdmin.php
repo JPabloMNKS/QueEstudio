@@ -17,62 +17,51 @@ if(!$nombreAdmin=="" && !$correoAdmin=="" && !$claveAdmin==""){
                 <script>  
                   var r = confirm("Administrador añadido con exito!");
                   if (r == true) {
-                    location.href="../admin/vacio2.php";
+                    location.href="../admin/index.php";
                   } else {
-                    location.href="../admin/vacio2.php";
+                    location.href="../admin/index.php";
                   }
                 
                 </script>
             ';
         }else{
             echo '
-             <script> location.href="../admin/vacio2.php"; </script>
-            <div class="modal" tabindex="-1" role="dialog">
-                  <div class="modal-dialog" role="document">
-                    <div class="modal-content">
-                      <div class="modal-header">
-                        <h5 class="modal-title">Error</h5>
-                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                          <span aria-hidden="true">&times;</span>
-                        </button>
-                      </div>
-                      <div class="modal-body">
-                        <p>Ha ocurrido un error, por favor intente nuevamente</p>
-                      </div>
-                      <div class="modal-footer">
-                        <button type="button" class="btn btn-danger" data-dismiss="modal">OK</button>
-                      </div>
-                    </div>
-                  </div>
-                </div>';
+                <script>  
+                  var r = confirm("Ha ocurrido un error, por favor intente nuevamente");
+                  if (r == true) {
+                    location.href="../admin/index.php";
+                  } else {
+                    location.href="../admin/index.php";
+                  }
+                
+                </script>
+            ';
         }
     }else{
-            echo '<div class="modal" tabindex="-1" role="dialog">
-                  <div class="modal-dialog" role="document">
-                    <div class="modal-content">
-                      <div class="modal-header">
-                        <h5 class="modal-title">Error</h5>
-                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                          <span aria-hidden="true">&times;</span>
-                        </button>
-                      </div>
-                      <div class="modal-body">
-                        <p>El correo que ha ingresado ya existe. Por favor ingrese otro nombre</p>
-                      </div>
-                      <div class="modal-footer">
-                        <button type="button" class="btn btn-danger" data-dismiss="modal">OK</button>
-                      </div>
-                    </div>
-                  </div>
-                </div>';
+       
+            echo '
+                <script>  
+                  var r = confirm(" El correo que ha ingresado ya existe. Por favor ingrese otro nombre");
+                  if (r == true) {
+                    location.href="../admin/index.php";
+                  } else {
+                    location.href="../admin/index.php";
+                  }
+                
+                </script>
+            ';
     }
 }else {
     echo '
-        <script type="text/javascript">
-        location.href="../admin/vacio2.php";
-
-        document.getElementById("demo").innerHTML = "Error los campos no deben de estar vacíos";
-        </script>
-';
+                <script>  
+                  var r = confirm("Error los campos no deben estar vacios");
+                  if (r == true) {
+                    location.href="../admin/index.php";
+                  } else {
+                    location.href="../admin/index.php";
+                  }
+                
+                </script>
+            ';
 }
 ?>

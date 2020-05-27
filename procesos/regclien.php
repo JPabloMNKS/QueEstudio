@@ -16,9 +16,29 @@ if(!$nombre=="" && !$correo=="" && !$contrasena=="" && !$telefono==""){
     if($verificaltotal<=0){
         
         if(consultasSQL::InsertSQL("usuario", "nombre, correo, contrasena, telefono", "'$nombre','$correo','$contrasena','$telefono'")){
-            echo 'El registro se completo con éxito';
+            echo '
+                <script>  
+                  var r = confirm("Se registro con exito");
+                  if (r == true) {
+                    location.href="../index.php";
+                  } else {
+                    location.href="../index.php";
+                  }
+                
+                </script>
+            ';
         }else{
-           echo '<br>Ha ocurrido un error.<br>Por favor intente nuevamente'; 
+            echo '
+                <script>  
+                  var r = confirm("Ha ocurrido un error.<br>Por favor intente nuevamente");
+                  if (r == true) {
+                    location.href="../index.php";
+                  } else {
+                    location.href="../index.php";
+                  }
+                
+                </script>
+            ';
         }
     }else{
         echo '<br>El correo que ha ingresado ya esta registrado.<br>Por favor ingrese otro correo';

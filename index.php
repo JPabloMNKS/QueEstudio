@@ -39,7 +39,8 @@
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
         <div class="container">
-            <a class="navbar-brand js-scroll-trigger" href="#page-top">Donde Estudio</a>
+            <img src="img/logos/logo_v.png" alt="" width="100px" height="100px">
+            <!--<a class="navbar-brand js-scroll-trigger" href="#page-top">Donde Estudio</a>-->
             <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
                 Menu
                 <i class="fas fa-bars"></i>

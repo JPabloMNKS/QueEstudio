@@ -5,11 +5,12 @@
 
 sleep(1);
 
-$nombreAdUp = $_POST['adm-nombre'];
 $correoAdUp = $_POST['adm-correo'];
-$idAdUP = $_POST['adm-id'];
+$estado = 0;
 
-if(consultasSQL::UpdateSQL("administrador","nombre='$nombreAdUp',correo='$correoAdUp'", "ID_admin='$idAdUP'")){
+
+
+if(consultasSQL::UpdateSQL("administrador","estado='$estado'","correo='$correoAdUp'")){
     echo '
                 <script>  
                   var r = confirm("Administrador actualizado con exito!");

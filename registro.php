@@ -27,9 +27,11 @@
 
 <body class="hold-transition">
 
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark" id="mainNav">
+    <nav class="navbar navbar-expand-lg navbar-dark" id="mainNav" style="background:#202425">
         <div class="container">
-            <a class="navbar-brand js-scroll-trigger" href="index.php">Donde Estudio</a>
+            <a href="index.php">
+                <img src="img/logos/logo_v2.jpeg" alt="" width="110px" height="80px">
+            </a>
             <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
                 Menu
                 <i class="fas fa-bars"></i>
@@ -50,6 +52,9 @@
                     </li>
                     <li class="nav-item">
                         <a class="nav-link js-scroll-trigger" href="index.php#contact">Contactanos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" href="iniciosesion.php">Inicio de Sesión</a>
                     </li>
                 </ul>
             </div>
@@ -73,6 +78,16 @@
                             </div>
                         </div>
                     </div>
+                    <div class="input-group mb-3">
+                        <input type="text" class="form-control" name="ci-registro" placeholder="Carnet Identidad">
+                        <div class="input-group-append">
+                            <div class="input-group-text">
+                                <span class="fas fa-user"></span>
+                            </div>
+                        </div>
+                    </div>                    
+                    
+                    
                     <div class="input-group mb-3">
                         <input type="email" class="form-control" name="correo-registro" placeholder="Correo Electronico">
                         <div class="input-group-append">
@@ -102,16 +117,7 @@
 
                 </form>
 
-                <!--            <div class="social-auth-links text-center mb-3">
-                <p>- O -</p>
-                <a href="#" class="btn btn-block btn-primary" style="border-color: #4267b2; background-color: #4267b2;">
-                    <i class="fab fa-facebook mr-2"></i> Registrate con Facebook
-                </a>
-                <a href="#" class="btn btn-block btn-danger">
-                    <i class="fab fa-google mr-2"></i> Registrate con Google
-                </a>
-            </div>-->
-
+                
                 <a href="iniciosesion.php" class="text-center" style="color: #343a40">Ya estoy registrado</a>
 
 

@@ -28,9 +28,11 @@
 <body class="hold-transition">
 
 
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark" id="mainNav">
+    <nav class="navbar navbar-expand-lg navbar-dark" id="mainNav" style="background:#202425">
         <div class="container">
-            <a class="navbar-brand js-scroll-trigger" href="index.php">Donde Estudio</a>
+            <a href="index.php">
+                <img src="img/logos/logo_v2.jpeg" alt="" width="110px" height="80px">
+            </a>
             <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
                 Menu
                 <i class="fas fa-bars"></i>
@@ -52,6 +54,9 @@
                     <li class="nav-item">
                         <a class="nav-link js-scroll-trigger" href="index.php#contact">Contactanos</a>
                     </li>
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" href="registro.php">Registrar Usuario</a>
+                    </li>
                 </ul>
             </div>
         </div>
@@ -67,7 +72,7 @@
             <img src="img/La-Paz-header.jpg" class="card-img-top" alt="...">
             <div class="card-body">
                 <h2 class="card-title" style="font-family: 'Kaushan Script'; color: #343a40">Donde Estudio</h2>
-                
+
                 <p class="login-box-msg">Registrate para iniciar sesion</p>
 
                 <form action="procesos/login.php" method="post">

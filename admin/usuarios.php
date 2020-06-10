@@ -13,7 +13,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
 
-    <title>administracion</title>
+    <title>Gestión Usuarios</title>
 
     <!-- Font Awesome Icons -->
     <link rel="stylesheet" href="plugins/fontawesome-free/css/all.min.css">
@@ -38,30 +38,25 @@
                 <li class="nav-item">
                     <a class="nav-link" data-widget="pushmenu" href="#" role="button"><i class="fas fa-bars"></i></a>
                 </li>
-                <li class="nav-item d-none d-sm-inline-block">
-                    <a href="../index.php" class="nav-link">Home</a>
-                </li>
-                <li class="nav-item d-none d-sm-inline-block">
-                    <a href="#" class="nav-link">Contact</a>
+                <li class="nav-item d-none d-sm-inline-block ">
+                    <a href="../procesos/logout.php" class="nav-link " style="color:red; ">Cerrar Sesion</a>
                 </li>
             </ul>
         </nav>
         <!-- /.navbar -->
 
         <!-- Main Sidebar Container -->
-        <aside class="main-sidebar sidebar-dark-primary elevation-4">
+        <aside class="main-sidebar sidebar-dark-primary elevation-4" style="background:#202425;">
             <!-- Brand Logo -->
-            <a href="index3.html" class="brand-link">
-                <span class="brand-text font-weight-light" style="margin-left: 20px;">Donde Estudio!</span>
+            <a href="../index.php" class="brand-link">
+                <img src="../img/logos/logo_v2.jpeg" alt="" width="150px" height="120px" style="margin-left:30px;">
+
             </a>
 
             <!-- Sidebar -->
             <div class="sidebar">
                 <!-- Sidebar user panel (optional) -->
                 <div class="user-panel mt-3 pb-3 mb-3 d-flex">
-                    <div class="image">
-                        <img src="dist/img/user2-160x160.jpg" class="img-circle elevation-2" alt="User Image">
-                    </div>
                     <div class="info">
                         <a href="#" class="d-block">
                             <?php 
@@ -76,41 +71,31 @@
                     <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
                         <!-- Add icons to the links using the .nav-icon class
                with font-awesome or any other icon font library -->
-                        <li class="nav-item has-treeview menu-open">
-                            <a href="#" class="nav-link active">
-                                <i class="nav-icon fas fa-tachometer-alt"></i>
-                                <p>
-                                    Starter Pages
-                                    <i class="right fas fa-angle-left"></i>
-                                </p>
+                        <li class="nav-item">
+                            <a href="index.php" class="nav-link ">
+                                <p>Inicio</p>
                             </a>
-                            <ul class="nav nav-treeview">
-                                <li class="nav-item">
-                                    <a href="" class="nav-link active">
-                                        <i class="far fa-circle nav-icon"></i>
-                                        <p>Active Page</p>
-                                    </a>
-                                </li>
-                                <li class="nav-item">
-                                    <a href="#" class="nav-link">
-                                        <i class="far fa-circle nav-icon"></i>
-                                        <p>Inactive Page</p>
-                                    </a>
-                                </li>
-                                <li class="nav-item">
-                                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modalCorrecto" id="botoncitoc">
-                                        Launch demo modal
-                                    </button>
-                                </li>
-                            </ul>
+                        </li>
+
+                        <li class="nav-item">
+                            <a href="administradores.php" class="nav-link">
+                                <!--<i class="far fa-circle nav-icon"></i>-->
+                                <p>Gestionar Administradores</p>
+                            </a>
                         </li>
                         <li class="nav-item">
-                            <a href="#" class="nav-link">
-                                <i class="nav-icon fas fa-th"></i>
-                                <p>
-                                    Simple Link
-                                    <span class="right badge badge-danger">New</span>
-                                </p>
+                            <a href="mensajes.php" class="nav-link">
+                                <p>Mensajes</p>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="usuarios.php" class="nav-link active">
+                                <p>Usuarios</p>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="reportes.php" class="nav-link">
+                                <p>Reportes</p>
                             </a>
                         </li>
                     </ul>
@@ -129,9 +114,9 @@
                 <div class="container-fluid">
                     <div class="row mb-2">
                         <div class="col-sm-6">
-                            <h1 class="m-0 text-dark">Registro</h1>
+                            <h1 class="m-0 text-dark">Usuarios</h1>
                         </div><!-- /.col -->
-                        <div class="col-sm-6">
+                        <!--<div class="col-sm-6">
                             <ol class="breadcrumb float-sm-right">
                                 <li class="breadcrumb-item"><a href="#">Inicio</a></li>
                                 <li class="breadcrumb-item active">Inicio Admin</li>
@@ -143,131 +128,159 @@
             <!-- /.content-header -->
 
 
-
-
-
             <!-- Main content -->
-
-
-
-
-
-
             <section class="content">
-                <div class="row">
-
-                    <div class="col-lg-6">
-                        <div class="container-fluid">
-                            <div class="row">
 
 
-                                <!-- left column -->
-                                <div class="col-md-12">
-                                    <!-- jquery validation -->
-                                    <div class="card card-primary">
-                                        <div class="card-header">
-                                            <h3 class="card-title">Registro <small>de Administradores</small></h3>
-                                        </div>
-                                        <!-- /.card-header -->
-                                        <!-- form start -->
-                                        <form action="../procesos/regAdmin.php" method="post" role="form" autocomplete="off">
-                                            <div class="card-body">
-
-                                                <div class="form-group">
-                                                    <label for="IngresarNombre">Nombre</label>
-                                                    <input type="name" name="nombre-admin-r" class="form-control" id="IngresarNombre" placeholder="Ingrese nombre">
-                                                </div>
-
-                                                <div class="form-group">
-                                                    <label for="IngresarCorreo">Correo Electronico</label>
-                                                    <input type="email" name="correo-admin-r" class="form-control" id="IngresarCorreo" placeholder="Ingrese Correo">
-                                                </div>
-                                                <div class="form-group">
-                                                    <label for="IngresarContrasena">Contraseña</label>
-                                                    <input type="password" name="clave-admin-r" class="form-control" id="IngresarContrasena" placeholder="Ingrese Contraseña">
-                                                </div>
-
-                                            </div>
-                                            <!-- /.card-body -->
-                                            <div class="card-footer" style="text-align:center;">
-                                                <button type="submit" class="btn btn-primary">Registrar Administrador</button>
-                                                <p id="demo"></p>
-                                            </div>
-                                        </form>
-                                    </div>
-                                    <!-- /.card -->
-                                </div>
-                                <!--/.col (left) -->
 
 
-                            </div>
-                            <!-- /.row -->
-                        </div><!-- /.container-fluid -->
+                <div class="card card-primary card-outline card-tabs">
+                    <div class="card-header p-0 pt-1 border-bottom-0">
+                        <ul class="nav nav-tabs" id="custom-tabs-three-tab" role="tablist">
+                            <li class="nav-item">
+                                <a class="nav-link active" id="custom-tabs-three-home-tab" data-toggle="pill" href="#custom-tabs-three-home" role="tab" aria-controls="custom-tabs-three-home" aria-selected="true">Dar de baja usuarios</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" id="custom-tabs-three-profile-tab" data-toggle="pill" href="#custom-tabs-three-profile" role="tab" aria-controls="custom-tabs-three-profile" aria-selected="false">Usuarios activos</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" id="custom-tabs-three-messages-tab" data-toggle="pill" href="#custom-tabs-three-messages" role="tab" aria-controls="custom-tabs-three-messages" aria-selected="false">Usuarios Inactivos </a>
+                            </li>
+                        </ul>
                     </div>
+                    <div class="card-body">
+                        <div class="tab-content" id="custom-tabs-three-tabContent">
+                            <div class="tab-pane fade show active" id="custom-tabs-three-home" role="tabpanel" aria-labelledby="custom-tabs-three-home-tab">
 
 
-                    <div class="col-md-6">
+                                <!--Dar de baja usuarios-->
+                                <div class="col-md-9">
+                                    <div class="card card-danger" style="margin-left: 160px;">
+                                        <div class="card-header">
+                                            <h3 class="card-title">Usuarios</h3>
+                                        </div>
+                                        <form action="../procesos/bajaUsuario.php" method="post" role="form">
 
-                        <div class="card card-danger">
-                            <div class="card-header">
-                                <h3 class="card-title">Eliminar Administradores</h3>
-                            </div>
-                            <form action="../procesos/deladmin.php" method="post" role="form">
-
-                                <div class="card-body">
-                                    <div class="form-group">
-                                        <label>Seleccionar</label>
-                                        <select class="form-control" name="correo-admin-d">
-                                            <?php 
-                                                $adminCon=  ejecutarSQL::consultar("select * from administrador");
+                                            <div class="card-body">
+                                                <div class="form-group">
+                                                    <label>Seleccionar</label>
+                                                    <select class="form-control" name="usuario-correo">
+                                                        <?php 
+                                                $adminCon=  ejecutarSQL::consultar("select * from usuario");
                                                 while($AdminD=mysqli_fetch_array($adminCon)){
                                                     echo '<option value="'.$AdminD['correo'].'">'.$AdminD['correo'].'</option>';
                                                 }
                                             ?>
-                                        </select>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <div class="card-footer" style="text-align:center;">
+                                                <button style="block:center;" type="submit" class="btn btn-danger">Dar de baja Usuario</button>
+                                                <p id="demo"></p>
+                                            </div>
+                                        </form>
                                     </div>
                                 </div>
-                                <div class="card-footer" style="text-align:center;">
-                                    <button style="block:center;" type="submit" class="btn btn-danger">Eliminar administrador</button>
-                                    <p id="demo"></p>
-                                </div>
-                            </form>
-                        </div>
-                    </div>
-                </div>
 
-                <div class="card">
-                    <div class="card-header">
-                        <h3 class="card-title">Administradores</h3>
-                    </div>
-                    <div class="card-body p-0">
-                        <table class="table table-striped">
-                            <thead>
-                                <tr>
-                                    <th style="width: 10px">ID</th>
-                                    <th>Nombre</th>
-                                    <th>Correo</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <?php 
-                                        $administrador=  ejecutarSQL::consultar("select * from administrador");
-                                        while($admin=mysqli_fetch_array($administrador)){ 
-                                            echo '            
-                                            <tr>
-                                                <td>'.$admin['ID_admin'].'</td>
-                                                <td>'.$admin['nombre'].'</td>
-                                                <td>'.$admin['correo'].'</td>
-                                            </tr>';
+
+
+                            </div>
+                            <div class="tab-pane fade" id="custom-tabs-three-profile" role="tabpanel" aria-labelledby="custom-tabs-three-profile-tab">
+
+                                <!--Usuarios activos-->
+
+                                <div class="card">
+                                    <div class="card-header">
+                                        <h3 class="card-title">Usuarios</h3>
+                                    </div>
+                                    <div class="card-body p-0">
+                                        <table class="table table-striped">
+                                            <thead>
+                                                <tr>
+                                                    <th style="width: 10px">ID</th>
+                                                    <th>Nombre</th>
+                                                    <th>CI</th>
+                                                    <th>Telefono</th>
+                                                    <th>Correo</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <?php 
+                                        $mensajes=  ejecutarSQL::consultar("select * from usuario");
+                                        while($men=mysqli_fetch_array($mensajes)){ 
+                                            if($men['estado']==1){
+                                              echo '            
+                                                <tr>
+                                                    <td>'.$men['ID_usuario'].'</td>
+                                                    <td>'.$men['nombre'].'</td>
+                                                    <td>'.$men['CI'].'</td>
+                                                    <td>'.$men['telefono'].'</td>
+                                                    <td>'.$men['correo'].'</td>
+                                                </tr>';  
+                                            }
                                         }
                                     ?>
-                            </tbody>
-                        </table>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+
+
+                            </div>
+                            <div class="tab-pane fade" id="custom-tabs-three-messages" role="tabpanel" aria-labelledby="custom-tabs-three-messages-tab">
+
+                                <!--Usuarios Inactivos-->
+
+                                <div class="card">
+                                    <div class="card-header">
+                                        <h3 class="card-title">Usuarios</h3>
+                                    </div>
+                                    <div class="card-body p-0">
+                                        <table class="table table-striped">
+                                            <thead>
+                                                <tr>
+                                                    <th style="width: 10px">ID</th>
+                                                    <th>Nombre</th>
+                                                    <th>CI</th>
+                                                    <th>Telefono</th>
+                                                    <th>Correo</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <?php 
+                                        $mensajes=  ejecutarSQL::consultar("select * from usuario");
+                                        while($men=mysqli_fetch_array($mensajes)){ 
+                                            if($men['estado']==0){
+                                              echo '            
+                                                <tr>
+                                                    <td>'.$men['ID_usuario'].'</td>
+                                                    <td>'.$men['nombre'].'</td>
+                                                    <td>'.$men['CI'].'</td>
+                                                    <td>'.$men['telefono'].'</td>
+                                                    <td>'.$men['correo'].'</td>
+                                                </tr>';  
+                                            }
+                                        }
+                                    ?>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+
+
+
+                            </div>
+                        </div>
                     </div>
+                    <!-- /.card -->
                 </div>
+
             </section>
         </div>
     </div>
+
+
+
 
     <!-- jQuery -->
     <script src="plugins/jquery/jquery.min.js"></script>

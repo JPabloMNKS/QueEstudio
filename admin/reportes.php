@@ -13,7 +13,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
 
-    <title>administracion</title>
+    <title>Reportes</title>
 
     <!-- Font Awesome Icons -->
     <link rel="stylesheet" href="plugins/fontawesome-free/css/all.min.css">
@@ -78,7 +78,7 @@
                         </li>
 
                         <li class="nav-item">
-                            <a href="administradores.php" class="nav-link active">
+                            <a href="administradores.php" class="nav-link ">
                                 <!--<i class="far fa-circle nav-icon"></i>-->
                                 <p>Gestionar Administradores</p>
                             </a>
@@ -94,7 +94,7 @@
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a href="reportes.php" class="nav-link">
+                            <a href="reportes.php" class="nav-link active">
                                 <p>Reportes</p>
                             </a>
                         </li>
@@ -114,7 +114,7 @@
                 <div class="container-fluid">
                     <div class="row mb-2">
                         <div class="col-sm-6">
-                            <h1 class="m-0 text-dark">Gestión de Administradores</h1>
+                            <h1 class="m-0 text-dark">Reportes</h1>
                         </div><!-- /.col -->
                         <!--<div class="col-sm-6">
                             <ol class="breadcrumb float-sm-right">
@@ -138,161 +138,22 @@
                     <div class="card-header p-0 pt-1 border-bottom-0">
                         <ul class="nav nav-tabs" id="custom-tabs-three-tab" role="tablist">
                             <li class="nav-item">
-                                <a class="nav-link active" id="custom-tabs-three-home-tab" data-toggle="pill" href="#custom-tabs-three-home" role="tab" aria-controls="custom-tabs-three-home" aria-selected="true">Registro de Administradores</a>
+                                <a class="nav-link active" id="custom-tabs-three-home-tab" data-toggle="pill" href="#custom-tabs-three-home" role="tab" aria-controls="custom-tabs-three-home" aria-selected="true"> Administradores Activos</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" id="custom-tabs-three-profile-tab" data-toggle="pill" href="#custom-tabs-three-profile" role="tab" aria-controls="custom-tabs-three-profile" aria-selected="false">Dar de baja Administradores</a>
+                                <a class="nav-link" id="custom-tabs-three-profile-tab" data-toggle="pill" href="#custom-tabs-three-profile" role="tab" aria-controls="custom-tabs-three-profile" aria-selected="false">Administradores Inactivos</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" id="custom-tabs-three-messages-tab" data-toggle="pill" href="#custom-tabs-three-messages" role="tab" aria-controls="custom-tabs-three-messages" aria-selected="false">Administradores Activos</a>
+                                <a class="nav-link" id="custom-tabs-three-messages-tab" data-toggle="pill" href="#custom-tabs-three-messages" role="tab" aria-controls="custom-tabs-three-messages" aria-selected="false">Usuarios Activos</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" id="custom-tabs-three-settings-tab" data-toggle="pill" href="#custom-tabs-three-settings" role="tab" aria-controls="custom-tabs-three-settings" aria-selected="false">Administradores Inactivos</a>
+                                <a class="nav-link" id="custom-tabs-three-settings-tab" data-toggle="pill" href="#custom-tabs-three-settings" role="tab" aria-controls="custom-tabs-three-settings" aria-selected="false">Usuarios Inactivos</a>
                             </li>
                         </ul>
                     </div>
                     <div class="card-body">
                         <div class="tab-content" id="custom-tabs-three-tabContent">
                             <div class="tab-pane fade show active" id="custom-tabs-three-home" role="tabpanel" aria-labelledby="custom-tabs-three-home-tab">
-
-                                <!-- Registro de Administradores-->
-
-                                <div class="col-md-9">
-                                    <!-- jquery validation -->
-                                    <div class="card card-primary" style="margin-left: 160px;">
-                                        <div class="card-header">
-                                            <h3 class="card-title">Registro de Administradores</h3>
-                                        </div>
-                                        <!-- /.card-header -->
-                                        <!-- form start -->
-                                        <form action="../procesos/regAdmin.php" method="post" role="form" autocomplete="off">
-                                            <div class="card-body">
-
-                                                <div class="form-group">
-                                                    <label for="IngresarNombre">Nombre</label>
-                                                    <input type="name" name="nombre-admin-r" class="form-control" id="IngresarNombre" placeholder="Ingrese nombre">
-                                                </div>
-
-                                                <div class="form-group">
-                                                    <label for="IngresarCorreo">Correo Electronico</label>
-                                                    <input type="email" name="correo-admin-r" class="form-control" id="IngresarCorreo" placeholder="Ingrese Correo">
-                                                </div>
-                                                <div class="form-group">
-                                                    <label for="IngresarContrasena">Contraseña</label>
-                                                    <input type="password" name="clave-admin-r" class="form-control" id="IngresarContrasena" placeholder="Ingrese Contraseña">
-                                                </div>
-
-                                            </div>
-                                            <!-- /.card-body -->
-                                            <div class="card-footer" style="text-align:center;">
-                                                <button type="submit" class="btn btn-primary">Registrar Administrador</button>
-                                                <p id="demo"></p>
-                                            </div>
-                                        </form>
-                                    </div>
-                                    <!-- /.card -->
-                                </div>
-                                <!--/.col (left) -->
-
-                            </div>
-                            <div class="tab-pane fade" id="custom-tabs-three-profile" role="tabpanel" aria-labelledby="custom-tabs-three-profile-tab">
-
-
-                                <!--Dar de baja Administradores-->
-
-
-                                <div class="col-md-9">
-                                    <div class="card card-danger" style="margin-left: 160px;">
-                                        <div class="card-header">
-                                            <h3 class="card-title">Administradores</h3>
-                                        </div>
-                                        <form action="../procesos/bajaAdmin.php" method="post" role="form">
-
-                                            <div class="card-body">
-                                                <div class="form-group">
-                                                    <label>Seleccionar</label>
-                                                    <select class="form-control" name="adm-correo">
-                                                        <?php 
-                                                $adminCon=  ejecutarSQL::consultar("select * from administrador");
-                                                while($AdminD=mysqli_fetch_array($adminCon)){
-                                                    echo '<option value="'.$AdminD['correo'].'">'.$AdminD['correo'].'</option>';
-                                                }
-                                            ?>
-                                                    </select>
-                                                </div>
-                                            </div>
-                                            <div class="card-footer" style="text-align:center;">
-                                                <button style="block:center;" type="submit" class="btn btn-danger">Dar de baja administrador</button>
-                                                <p id="demo"></p>
-                                            </div>
-                                        </form>
-                                    </div>
-                                </div>
-
-
-                            </div>
-                            <div class="tab-pane fade" id="custom-tabs-three-messages" role="tabpanel" aria-labelledby="custom-tabs-three-messages-tab">
-
-
-                                <!--Administradores Activos-->
-
-
-                                <div class="card">
-                                    <div class="card-header">
-                                        <h3 class="card-title">Administradores</h3>
-                                    </div>
-                                    <div class="card-body p-0">
-                                        <table class="table table-striped">
-                                            <thead>
-                                                <tr>
-                                                    <th style="width: 10px">ID</th>
-                                                    <th>Nombre</th>
-                                                    <th>Correo</th>
-                                                </tr>
-                                            </thead>
-                                            <tbody>
-
-                                                <?php
-                                    $administrador=  ejecutarSQL::consultar("select * from administrador");
-                                    $upr=1;
-                                    while($admin=mysqli_fetch_array($administrador)){
-                                        if($admin['estado']==1){
-                                            echo '
-                                                <div>
-                                                  <form method="post" action="../procesos/updAdministrador.php" '.$upr.'">
-                                                    <tr>
-                                                        <td>
-                                                            <input type="hidden" name="adm-id" required="" value="'.$admin['ID_admin'].'"> '.$admin['ID_admin'].'</td>
-                                                        <td>
-                                                            <input type="text" name="adm-nombre" required="" value="'.$admin['nombre'].'">
-                                                        </td>
-                                                        <td>
-                                                            <input type="text" required="" name="adm-correo" value="'.$admin['correo'].'">
-                                                        </td>
-                                                        
-                                                        <td class="text-center">
-                                                            <button type="submit" class="btn btn-sm btn-primary button-UPR" value="res-update-product-'.$upr.'">Actualizar</button>
-                                                            <div id="res-update-product-'.$upr.'" style="width: 100%; margin:0px; padding:0px;"></div>
-                                                        </td>
-                                                    </tr>
-                                                  </form>
-                                                </div>
-                                                ';
-                                            $upr=$upr+1;
-                                            }
-                                        }
-                                      ?>
-                                            </tbody>
-                                        </table>
-                                    </div>
-                                </div>
-
-
-                            </div>
-                            <div class="tab-pane fade" id="custom-tabs-three-settings" role="tabpanel" aria-labelledby="custom-tabs-three-settings-tab">
-
-
-                                <!--Administradores Inactivos-->
 
                                 <div class="card">
                                     <div class="card-header">
@@ -310,16 +171,51 @@
                                             <tbody>
                                                 <?php 
                                         $administrador=  ejecutarSQL::consultar("select * from administrador");
-                                        while($admin=mysqli_fetch_array($administrador)){ 
-                                            if($admin['estado']==0){
-                                               echo '            
-                                                    <tr>
-                                                        <td>'.$admin['ID_admin'].'</td>
-                                                        <td>'.$admin['nombre'].'</td>
-                                                        <td>'.$admin['correo'].'</td>
-                                                    </tr>'; 
+                                        while($admin=mysqli_fetch_array($administrador)){
+                                            if($admin['estado']==1){
+                                                echo '            
+                                                <tr>
+                                                    <td>'.$admin['ID_admin'].'</td>
+                                                    <td>'.$admin['nombre'].'</td>
+                                                    <td>'.$admin['correo'].'</td>
+                                                </tr>';
                                             }
-                                            
+                                        }
+                                    ?>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="tab-pane fade" id="custom-tabs-three-profile" role="tabpanel" aria-labelledby="custom-tabs-three-profile-tab">
+
+
+                                <div class="card">
+                                    <div class="card-header">
+                                        <h3 class="card-title">Administradores</h3>
+                                    </div>
+                                    <div class="card-body p-0">
+                                        <table class="table table-striped">
+                                            <thead>
+                                                <tr>
+                                                    <th style="width: 10px">ID</th>
+                                                    <th>Nombre</th>
+                                                    <th>Correo</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <?php 
+                                        $administrador=  ejecutarSQL::consultar("select * from administrador");
+                                        while($admin=mysqli_fetch_array($administrador)){
+                                            if($admin['estado']==0){
+                                                echo '            
+                                                <tr>
+                                                    <td>'.$admin['ID_admin'].'</td>
+                                                    <td>'.$admin['nombre'].'</td>
+                                                    <td>'.$admin['correo'].'</td>
+                                                </tr>';
+                                            }
                                         }
                                     ?>
                                             </tbody>
@@ -328,6 +224,88 @@
                                 </div>
 
 
+                            </div>
+                            <div class="tab-pane fade" id="custom-tabs-three-messages" role="tabpanel" aria-labelledby="custom-tabs-three-messages-tab">
+
+
+
+                                <div class="card">
+                                    <div class="card-header">
+                                        <h3 class="card-title">Usuarios</h3>
+                                    </div>
+                                    <div class="card-body p-0">
+                                        <table class="table table-striped">
+                                            <thead>
+                                                <tr>
+                                                    <th style="width: 10px">ID</th>
+                                                    <th>Nombre</th>
+                                                    <th>CI</th>
+                                                    <th>Telefono</th>
+                                                    <th>Correo</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <?php 
+                                        $mensajes=  ejecutarSQL::consultar("select * from usuario");
+                                        while($men=mysqli_fetch_array($mensajes)){ 
+                                            if($men['estado']==1){
+                                                echo '            
+                                                <tr>
+                                                    <td>'.$men['ID_usuario'].'</td>
+                                                    <td>'.$men['nombre'].'</td>
+                                                    <td>'.$men['CI'].'</td>
+                                                    <td>'.$men['telefono'].'</td>
+                                                    <td>'.$men['correo'].'</td>
+                                                </tr>';
+                                            }
+                                        }
+                                    ?>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+
+
+                            </div>
+                            <div class="tab-pane fade" id="custom-tabs-three-settings" role="tabpanel" aria-labelledby="custom-tabs-three-settings-tab">
+
+
+
+                                <div class="card">
+                                    <div class="card-header">
+                                        <h3 class="card-title">Usuarios</h3>
+                                    </div>
+                                    <div class="card-body p-0">
+                                        <table class="table table-striped">
+                                            <thead>
+                                                <tr>
+                                                    <th style="width: 10px">ID</th>
+                                                    <th>Nombre</th>
+                                                    <th>CI</th>
+                                                    <th>Telefono</th>
+                                                    <th>Correo</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <?php 
+                                        $mensajes=  ejecutarSQL::consultar("select * from usuario");
+                                        while($men=mysqli_fetch_array($mensajes)){ 
+                                            if($men['estado']==0){
+                                                echo '            
+                                                <tr>
+                                                    <td>'.$men['ID_usuario'].'</td>
+                                                    <td>'.$men['nombre'].'</td>
+                                                    <td>'.$men['CI'].'</td>
+                                                    <td>'.$men['telefono'].'</td>
+                                                    <td>'.$men['correo'].'</td>
+                                                </tr>';
+                                            }
+                                        }
+                                    ?>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
 
 
                             </div>

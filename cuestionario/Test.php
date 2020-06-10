@@ -1,3 +1,10 @@
+<?php 
+    session_start(); 
+    error_reporting(E_PARSE);
+?>
+
+
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -8,7 +15,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Donde Estudio</title>
+    <title>Test Vocacional</title>
 
     <!-- Bootstrap core CSS -->
     <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -40,16 +47,17 @@
 
     <!-- Navigation -->
     <!--fixed-top-->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark" id="mainNav">
-
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav" style="background:#202425">
         <div class="container">
-            <a class="navbar-brand js-scroll-trigger" href="index.php">Donde Estudio</a>
+            <a href="index.php">
+                <img src="../img/logos/logo_v2.jpeg" alt="" width="110px" height="80px">
+            </a>
             <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
                 Menu
                 <i class="fas fa-bars"></i>
             </button>
             <div class="collapse navbar-collapse" id="navbarResponsive">
-                <ul class="navbar-nav text-uppercase ml-auto">
+                <ul class="navbar-nav text-uppercase ml-auto" style="margin-left:200px;">
                     <li class="nav-item">
                         <a class="nav-link js-scroll-trigger" href="#services">Services</a>
                     </li>
@@ -65,65 +73,106 @@
                     <li class="nav-item">
                         <a class="nav-link js-scroll-trigger" href="#contact">Contactanos</a>
                     </li>
+                    <?php 
+                            if(!$_SESSION['nombreAdmin']==""){
+                                echo ' 
+                                    <li class="nav-item">
+                                        <div class="btn-group" style="margin-top:8px;">
+                                            <button type="button" class="btn btn-primary dropdown-toggle dropdown-icon" data-toggle="dropdown" style="background:#457b9d;">'.$_SESSION['nameAdmin'].'
+                                            </button>
+                                            <div class="dropdown-menu" role="menu">
+                                                <a class="dropdown-item" href="admin/index.php">Administración</a>
+                                                <div class="dropdown-divider"></div>
+                                                <a class="dropdown-item" href="procesos/logout.php">Cerrar Sesión</a>
+                                            </div>
+                                        </div>
+                                    </li>
+                                 ';
+                            }else if(!$_SESSION['nombreUser']==""){
+                                echo ' 
+                                    <li class="nav-item">
+                                        <div class="btn-group" style="margin-top:8px;">
+                                            <button type="button" class="btn btn-primary dropdown-toggle dropdown-icon" data-toggle="dropdown" style="background:#457b9d;">'.$_SESSION['nameUser'].'
+                                            </button>
+                                            <div class="dropdown-menu" role="menu">
+                                                <a class="dropdown-item" href="busqueda.php">Buscar Universidad</a>
+                                                <div class="dropdown-divider"></div>
+                                                <a class="dropdown-item" href="procesos/logout.php">Cerrar Sesión</a>
+                                            </div>
+                                        </div>
+                                    </li>
+
+                                    
+                                 ';
+                            }else{
+                                echo ' 
+                                    <li class="nav-item">
+                                        <a class="nav-link js-scroll-trigger" href="iniciosesion.php">Inciar Sesión</a>
+                                    </li>
+                                 ';
+                            }
+                        ?>
                 </ul>
             </div>
         </div>
     </nav>
 
-
+    <div style="margin-left: 100px; margin-right: 100px;">
+        <h3>Lea las preguntas y responda las preguntas con SI o No, dependiendo de tus gusto, y lo que te gustaria hacer en tu vida laboral suerte.</h3>
+    </div>
     <!-- Prueba -->
-    <section class="bg-light page-section">
-        <div class="container">
+    <!--    <section class="bg-light page-section">
+        <div class="container">-->
 
 
-            <div class="modal-dialog" id="CardPregunta">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <div class="container">
-                            <div class="row">
-                                <div class="col-" style="margin-top: 20px; margin-right: 5px;">
-                                    <span class="label label-warning" id="qid" style="font-size: 25px;"></span>
-                                </div>
-                                <div class="col-">
-                                    <h3 id="pregunta"> </h3>
-                                </div>
-                            </div>
+    <div class="modal-dialog" id="CardPregunta">
+        <div class="modal-content">
+            <div class="modal-header">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-" style="margin-top: 20px; margin-right: 5px;">
+                            <span class="label label-warning" id="qid" style="font-size: 25px;"></span>
                         </div>
-                    </div>
-                    <div class="modal-body">
-
-                        <div class="col-xs-3 col-xs-offset-5">
-                            <div id="loadbar" style="display: none;">
-                                <div class="blockG" id="rotateG_01"></div>
-                                <div class="blockG" id="rotateG_02"></div>
-                                <div class="blockG" id="rotateG_03"></div>
-                                <div class="blockG" id="rotateG_04"></div>
-                                <div class="blockG" id="rotateG_05"></div>
-                                <div class="blockG" id="rotateG_06"></div>
-                                <div class="blockG" id="rotateG_07"></div>
-                                <div class="blockG" id="rotateG_08"></div>
-                            </div>
+                        <div class="col-">
+                            <h3 id="pregunta"> </h3>
                         </div>
-
-                        <div class="quiz" id="quiz" data-toggle="buttons">
-
-                            <label class="element-animation1 btn btn-lg btn-primary btn-block"><span class="btn-label"><i class="glyphicon glyphicon-chevron-right"></i></span> <input id="resp" type="radio" name="q_answer" value="">Si</label>
-
-
-                            <label class="element-animation2 btn btn-lg btn-primary btn-block"><span class="btn-label"><i class="glyphicon glyphicon-chevron-right"></i></span> <input type="radio" name="q_answer" value="0">No</label>
-
-                        </div>
-                    </div>
-                    <div class="modal-footer text-muted">
-                        <span id="answer"></span>
-                    </div>
-                    <div class="modal-footer text-muted">
-                        <h5 id="answer2"></h5>
                     </div>
                 </div>
             </div>
+            <div class="modal-body">
+
+                <div class="col-xs-3 col-xs-offset-5">
+                    <div id="loadbar" style="display: none;">
+                        <div class="blockG" id="rotateG_01"></div>
+                        <div class="blockG" id="rotateG_02"></div>
+                        <div class="blockG" id="rotateG_03"></div>
+                        <div class="blockG" id="rotateG_04"></div>
+                        <div class="blockG" id="rotateG_05"></div>
+                        <div class="blockG" id="rotateG_06"></div>
+                        <div class="blockG" id="rotateG_07"></div>
+                        <div class="blockG" id="rotateG_08"></div>
+                    </div>
+                </div>
+
+                <div class="quiz" id="quiz" data-toggle="buttons">
+
+                    <label class="element-animation1 btn btn-lg btn-primary btn-block"><span class="btn-label"><i class="glyphicon glyphicon-chevron-right"></i></span> <input id="resp" type="radio" name="q_answer" value="">Si</label>
+
+
+                    <label class="element-animation2 btn btn-lg btn-primary btn-block"><span class="btn-label"><i class="glyphicon glyphicon-chevron-right"></i></span> <input type="radio" name="q_answer" value="0">No</label>
+
+                </div>
+            </div>
+            <div class="modal-footer text-muted">
+                <span id="answer"></span>
+            </div>
+            <div class="modal-footer text-muted">
+                <h5 id="answer2"></h5>
+            </div>
         </div>
-    </section>
+    </div>
+    <!--        </div>
+    </section>-->
 
 
 
@@ -166,7 +215,7 @@
 
 
 
-       
+
         </div>
     </section>
 

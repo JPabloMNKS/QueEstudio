@@ -36,10 +36,12 @@
 
 <body id="page-top">
 
-    <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
+    <!-- Navigation  fixed-top -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav" style="background:#202425">
         <div class="container">
-            <img src="img/logos/logo_v.png" alt="" width="100px" height="100px">
+            <a href="index.php">
+                <img src="img/logos/logo_v2.jpeg" alt="" width="110px" height="80px">
+            </a>
             <!--<a class="navbar-brand js-scroll-trigger" href="#page-top">Donde Estudio</a>-->
             <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
                 Menu
@@ -67,11 +69,10 @@
                                 echo ' 
                                     <li class="nav-item">
                                         <div class="btn-group" style="margin-top:8px;">
-                                            <button type="button" class="btn btn-warning dropdown-toggle dropdown-icon" data-toggle="dropdown">'.$_SESSION['nameAdmin'].'
+                                            <button type="button" class="btn btn-primary dropdown-toggle dropdown-icon" data-toggle="dropdown" style="background:#457b9d;">'.$_SESSION['nameAdmin'].'
                                             </button>
                                             <div class="dropdown-menu" role="menu">
                                                 <a class="dropdown-item" href="admin/index.php">Administración</a>
-                                                <a class="dropdown-item" href="#team">Opcion genial</a>
                                                 <div class="dropdown-divider"></div>
                                                 <a class="dropdown-item" href="procesos/logout.php">Cerrar Sesión</a>
                                             </div>
@@ -82,10 +83,10 @@
                                 echo ' 
                                     <li class="nav-item">
                                         <div class="btn-group" style="margin-top:8px;">
-                                            <button type="button" class="btn btn-warning dropdown-toggle dropdown-icon" data-toggle="dropdown">'.$_SESSION['nameUser'].'
+                                            <button type="button" class="btn btn-primary dropdown-toggle dropdown-icon" data-toggle="dropdown" style="background:#457b9d;">'.$_SESSION['nameUser'].'
                                             </button>
                                             <div class="dropdown-menu" role="menu">
-                                                <a class="dropdown-item" href="#team">Opcion genial</a>
+                                                <a class="dropdown-item" href="busqueda.php">Buscar Universidad</a>
                                                 <div class="dropdown-divider"></div>
                                                 <a class="dropdown-item" href="procesos/logout.php">Cerrar Sesión</a>
                                             </div>
@@ -565,8 +566,8 @@
                                 <p class="item-intro text-muted">Puedes encontrarnos en:</p>
                                 <!--<img class="img-fluid d-block mx-auto" src="img/portfolio/01-full.jpg" alt="">-->
                                 <!--                                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3824.815393804398!2d-68.0883420935948!3d-16.535414895386864!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x915f212398c5d1b5%3A0x1e20bc0a1880e88c!2sEscuela%20Militar%20de%20Ingenier%C3%ADa%2C%20Av%20Rafael%20Pab%C3%B3n%2C%20La%20Paz!5e0!3m2!1ses-419!2sbo!4v1585793812149!5m2!1ses-419!2sbo" width="800" height="600" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0" class="img-fluid tam"></iframe>-->
-                                 <img src="img/emi/persona2.jpg" alt="" class="rounded mx-auto d-block">
-                                
+                                <img src="img/emi/persona2.jpg" alt="" class="rounded mx-auto d-block">
+
                                 <p>La Escuela Militar de Ingeniería es un centro de estudios con especialidad en ingeniería de Bolivia. </p>
 
                                 <ul class="list-inline">
